@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201202 00:21:10.883" rpa="false">
-<suite id="s1" name="MarqetaTest User" source="C:\Users\westagram\Desktop\Marqeta\Test\Testing_User\MarqetaTest_User.robot">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201203 23:52:43.346" rpa="false">
+<suite id="s1" name="MarqetaTest User" source="C:\Users\westagram\OneDrive\Desktop\marqeta-assignment\Test\Testing_User\MarqetaTest_User.robot">
 <test id="s1-t1" name="SUITE 1 - TEST CASE 1">
 <kw name="SUCCESSULLY CREATE USER">
 <arguments>
@@ -17,34 +17,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:11.431" level="INFO">${response} = {'token': '05f9cc20-411f-4d6d-93d7-47c63bec46bb', 'active': True, 'first_name': 'JOHN', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:11.056" endtime="20201202 00:21:11.431"></status>
+<msg timestamp="20201203 23:52:43.914" level="INFO">${response} = {'token': 'add3db87-ae62-4bee-b9d8-5300068949ca', 'active': True, 'first_name': 'JOHN', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:43.538" endtime="20201203 23:52:43.914"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:11.432" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:43.915" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:07Z',
- 'deposit_account': {'account_number': '40014464215334788',
+ 'created_time': '2020-12-04T07:52:43Z',
+ 'deposit_account': {'account_number': '40014464289129205',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '48ef1aed-2345-421b-befe-30352cc557ec'},
+                     'token': 'f6ef241a-e3eb-48cc-8444-2abbbcd3fcde'},
  'first_name': 'JOHN',
- 'last_modified_time': '2020-12-02T08:21:07Z',
+ 'last_modified_time': '2020-12-04T07:52:43Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '05f9cc20-411f-4d6d-93d7-47c63bec46bb',
+ 'token': 'add3db87-ae62-4bee-b9d8-5300068949ca',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:11.431" endtime="20201202 00:21:11.432"></status>
+<status status="PASS" starttime="20201203 23:52:43.914" endtime="20201203 23:52:43.915"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:11.055" endtime="20201202 00:21:11.432"></status>
+<status status="PASS" starttime="20201203 23:52:43.537" endtime="20201203 23:52:43.915"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:11.055" endtime="20201202 00:21:11.433" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:43.537" endtime="20201203 23:52:43.916" critical="yes"></status>
 </test>
 <test id="s1-t2" name="SUITE 1 - TEST CASE 2">
 <kw name="SUCCESSULLY CREATE USER">
@@ -62,34 +62,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:11.760" level="INFO">${response} = {'token': '89144820-846a-4e99-bcc6-4c8080757e7d', 'active': True, 'first_name': 'john', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:11.435" endtime="20201202 00:21:11.760"></status>
+<msg timestamp="20201203 23:52:44.207" level="INFO">${response} = {'token': '2c678ac2-04b1-4a95-8ff9-3d9b9acf6870', 'active': True, 'first_name': 'john', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:43.918" endtime="20201203 23:52:44.208"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:11.761" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:44.208" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:07Z',
- 'deposit_account': {'account_number': '40014464288866633',
+ 'created_time': '2020-12-04T07:52:44Z',
+ 'deposit_account': {'account_number': '40014464729737054',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'e7aea9b2-b13f-417c-b526-08de960b13bf'},
+                     'token': '180b002d-1724-433d-9edf-a142883f8020'},
  'first_name': 'john',
- 'last_modified_time': '2020-12-02T08:21:07Z',
+ 'last_modified_time': '2020-12-04T07:52:44Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '89144820-846a-4e99-bcc6-4c8080757e7d',
+ 'token': '2c678ac2-04b1-4a95-8ff9-3d9b9acf6870',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:11.761" endtime="20201202 00:21:11.761"></status>
+<status status="PASS" starttime="20201203 23:52:44.208" endtime="20201203 23:52:44.208"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:11.435" endtime="20201202 00:21:11.761"></status>
+<status status="PASS" starttime="20201203 23:52:43.917" endtime="20201203 23:52:44.208"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:11.434" endtime="20201202 00:21:11.762" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:43.917" endtime="20201203 23:52:44.209" critical="yes"></status>
 </test>
 <test id="s1-t3" name="SUITE 1 - TEST CASE 3">
 <kw name="SUCCESSULLY CREATE USER">
@@ -107,34 +107,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:12.077" level="INFO">${response} = {'token': '9ac600a3-fb9e-4948-9b24-ef2b5d5fd0d2', 'active': True, 'first_name': 'JoHn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:11.764" endtime="20201202 00:21:12.077"></status>
+<msg timestamp="20201203 23:52:44.488" level="INFO">${response} = {'token': '38e417cd-19df-4587-b8b4-9c3b40ea125b', 'active': True, 'first_name': 'JoHn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:44.211" endtime="20201203 23:52:44.488"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:12.077" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:44.489" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:08Z',
- 'deposit_account': {'account_number': '40014464364213981',
+ 'created_time': '2020-12-04T07:52:44Z',
+ 'deposit_account': {'account_number': '40014464176312518',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '11f6038c-ab58-49da-960d-6496e40dd19c'},
+                     'token': 'a406cbb0-9bfc-4a6f-97f1-50b423401d6e'},
  'first_name': 'JoHn',
- 'last_modified_time': '2020-12-02T08:21:08Z',
+ 'last_modified_time': '2020-12-04T07:52:44Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '9ac600a3-fb9e-4948-9b24-ef2b5d5fd0d2',
+ 'token': '38e417cd-19df-4587-b8b4-9c3b40ea125b',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:12.077" endtime="20201202 00:21:12.078"></status>
+<status status="PASS" starttime="20201203 23:52:44.488" endtime="20201203 23:52:44.489"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:11.764" endtime="20201202 00:21:12.078"></status>
+<status status="PASS" starttime="20201203 23:52:44.211" endtime="20201203 23:52:44.489"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:11.763" endtime="20201202 00:21:12.078" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:44.210" endtime="20201203 23:52:44.490" critical="yes"></status>
 </test>
 <test id="s1-t4" name="SUITE 1 - TEST CASE 4">
 <kw name="SUCCESSULLY CREATE USER">
@@ -152,34 +152,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:12.366" level="INFO">${response} = {'token': 'b71aa1a4-2ede-4692-acd1-ec708dc8d5d0', 'active': True, 'first_name': '$JoHn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02...</msg>
-<status status="PASS" starttime="20201202 00:21:12.080" endtime="20201202 00:21:12.366"></status>
+<msg timestamp="20201203 23:52:44.767" level="INFO">${response} = {'token': '842a74b4-4aba-4a58-a225-7b7969f55570', 'active': True, 'first_name': '$JoHn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04...</msg>
+<status status="PASS" starttime="20201203 23:52:44.492" endtime="20201203 23:52:44.767"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:12.366" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:44.768" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:08Z',
- 'deposit_account': {'account_number': '40014464441406475',
+ 'created_time': '2020-12-04T07:52:44Z',
+ 'deposit_account': {'account_number': '40014464628909002',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '0c41130f-09c2-4b98-bcad-b560ea84a9eb'},
+                     'token': 'dd2d5f48-3326-4ed1-aa90-4691edea3f5a'},
  'first_name': '$JoHn',
- 'last_modified_time': '2020-12-02T08:21:08Z',
+ 'last_modified_time': '2020-12-04T07:52:44Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'b71aa1a4-2ede-4692-acd1-ec708dc8d5d0',
+ 'token': '842a74b4-4aba-4a58-a225-7b7969f55570',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:12.366" endtime="20201202 00:21:12.366"></status>
+<status status="PASS" starttime="20201203 23:52:44.767" endtime="20201203 23:52:44.768"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.080" endtime="20201202 00:21:12.366"></status>
+<status status="PASS" starttime="20201203 23:52:44.491" endtime="20201203 23:52:44.768"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.079" endtime="20201202 00:21:12.367" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:44.491" endtime="20201203 23:52:44.768" critical="yes"></status>
 </test>
 <test id="s1-t5" name="SUITE 1 - TEST CASE 5">
 <kw name="SUCCESSULLY CREATE USER">
@@ -197,34 +197,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:12.642" level="INFO">${response} = {'token': 'e431367d-8a86-45f7-a154-b772dbb532d2', 'active': True, 'first_name': 'Jo_hn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02...</msg>
-<status status="PASS" starttime="20201202 00:21:12.369" endtime="20201202 00:21:12.642"></status>
+<msg timestamp="20201203 23:52:45.048" level="INFO">${response} = {'token': 'c97b04d7-bce6-45c1-b4d3-b26efee7b14d', 'active': True, 'first_name': 'Jo_hn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04...</msg>
+<status status="PASS" starttime="20201203 23:52:44.771" endtime="20201203 23:52:45.048"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:12.643" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:45.049" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:08Z',
- 'deposit_account': {'account_number': '40014464520473982',
+ 'created_time': '2020-12-04T07:52:44Z',
+ 'deposit_account': {'account_number': '40014464087580625',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'eefa0169-3e07-43b8-8807-c22ed7bcf8b1'},
+                     'token': 'd384cea3-30de-4be2-b313-0056e8cb5a41'},
  'first_name': 'Jo_hn',
- 'last_modified_time': '2020-12-02T08:21:08Z',
+ 'last_modified_time': '2020-12-04T07:52:44Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'e431367d-8a86-45f7-a154-b772dbb532d2',
+ 'token': 'c97b04d7-bce6-45c1-b4d3-b26efee7b14d',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:12.642" endtime="20201202 00:21:12.643"></status>
+<status status="PASS" starttime="20201203 23:52:45.049" endtime="20201203 23:52:45.049"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.369" endtime="20201202 00:21:12.643"></status>
+<status status="PASS" starttime="20201203 23:52:44.771" endtime="20201203 23:52:45.049"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.368" endtime="20201202 00:21:12.644" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:44.770" endtime="20201203 23:52:45.050" critical="yes"></status>
 </test>
 <test id="s1-t6" name="SUITE 1 - TEST CASE 6">
 <kw name="SUCCESSULLY CREATE USER">
@@ -242,34 +242,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:12.926" level="INFO">${response} = {'token': '2a4b074d-233f-4933-8776-990a47a626e9', 'active': True, 'first_name': 'Jo hn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02...</msg>
-<status status="PASS" starttime="20201202 00:21:12.646" endtime="20201202 00:21:12.926"></status>
+<msg timestamp="20201203 23:52:45.338" level="INFO">${response} = {'token': 'dd097cf0-e392-4d1c-82fb-3463d9be62fd', 'active': True, 'first_name': 'Jo hn', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04...</msg>
+<status status="PASS" starttime="20201203 23:52:45.052" endtime="20201203 23:52:45.338"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:12.926" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:45.338" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:08Z',
- 'deposit_account': {'account_number': '40014464601446634',
+ 'created_time': '2020-12-04T07:52:45Z',
+ 'deposit_account': {'account_number': '40014464552381277',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'd90d48c7-0434-4113-9c44-c435a0cb8e0e'},
+                     'token': '8f40308e-4379-4c82-8bc2-4096d9f29a6d'},
  'first_name': 'Jo hn',
- 'last_modified_time': '2020-12-02T08:21:08Z',
+ 'last_modified_time': '2020-12-04T07:52:45Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '2a4b074d-233f-4933-8776-990a47a626e9',
+ 'token': 'dd097cf0-e392-4d1c-82fb-3463d9be62fd',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:12.926" endtime="20201202 00:21:12.926"></status>
+<status status="PASS" starttime="20201203 23:52:45.338" endtime="20201203 23:52:45.338"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.646" endtime="20201202 00:21:12.928"></status>
+<status status="PASS" starttime="20201203 23:52:45.052" endtime="20201203 23:52:45.338"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.645" endtime="20201202 00:21:12.928" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:45.051" endtime="20201203 23:52:45.339" critical="yes"></status>
 </test>
 <test id="s1-t7" name="SUITE 1 - TEST CASE 7">
 <kw name="SUCCESSULLY CREATE USER">
@@ -287,34 +287,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:13.214" level="INFO">${response} = {'token': '17807217-82fd-4295-b9d9-6326cd34378e', 'active': True, 'first_name': 'J', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T08:...</msg>
-<status status="PASS" starttime="20201202 00:21:12.930" endtime="20201202 00:21:13.214"></status>
+<msg timestamp="20201203 23:52:45.615" level="INFO">${response} = {'token': '3f4317b6-0709-4c9b-a5de-1e581a285367', 'active': True, 'first_name': 'J', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T07:...</msg>
+<status status="PASS" starttime="20201203 23:52:45.341" endtime="20201203 23:52:45.615"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:13.214" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:45.616" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:09Z',
- 'deposit_account': {'account_number': '40014464684354788',
+ 'created_time': '2020-12-04T07:52:45Z',
+ 'deposit_account': {'account_number': '40014464023365537',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'bf05d537-c894-4a9a-a45c-98d4edca96b9'},
+                     'token': '4b4a9028-edd4-4d67-9235-32706605ffb8'},
  'first_name': 'J',
- 'last_modified_time': '2020-12-02T08:21:09Z',
+ 'last_modified_time': '2020-12-04T07:52:45Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '17807217-82fd-4295-b9d9-6326cd34378e',
+ 'token': '3f4317b6-0709-4c9b-a5de-1e581a285367',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:13.214" endtime="20201202 00:21:13.215"></status>
+<status status="PASS" starttime="20201203 23:52:45.615" endtime="20201203 23:52:45.616"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.929" endtime="20201202 00:21:13.215"></status>
+<status status="PASS" starttime="20201203 23:52:45.341" endtime="20201203 23:52:45.616"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:12.929" endtime="20201202 00:21:13.215" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:45.340" endtime="20201203 23:52:45.616" critical="yes"></status>
 </test>
 <test id="s1-t8" name="SUITE 1 - TEST CASE 8">
 <kw name="SUCCESSULLY CREATE USER">
@@ -332,34 +332,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:13.499" level="INFO">${response} = {'token': '9eaf265b-e42e-44d4-a304-7713d2e99d16', 'active': True, 'first_name': 'j', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T08:...</msg>
-<status status="PASS" starttime="20201202 00:21:13.218" endtime="20201202 00:21:13.499"></status>
+<msg timestamp="20201203 23:52:45.889" level="INFO">${response} = {'token': 'a80dcf7c-7a92-44e5-b001-1b33988d0c76', 'active': True, 'first_name': 'j', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T07:...</msg>
+<status status="PASS" starttime="20201203 23:52:45.619" endtime="20201203 23:52:45.889"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:13.500" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:45.890" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:09Z',
- 'deposit_account': {'account_number': '40014464769229038',
+ 'created_time': '2020-12-04T07:52:45Z',
+ 'deposit_account': {'account_number': '40014464500587785',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '0d7f85e2-626c-467d-a0b6-9632fc43dd5d'},
+                     'token': '5c1e526f-1482-44ec-8394-1826db946245'},
  'first_name': 'j',
- 'last_modified_time': '2020-12-02T08:21:09Z',
+ 'last_modified_time': '2020-12-04T07:52:45Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '9eaf265b-e42e-44d4-a304-7713d2e99d16',
+ 'token': 'a80dcf7c-7a92-44e5-b001-1b33988d0c76',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:13.500" endtime="20201202 00:21:13.500"></status>
+<status status="PASS" starttime="20201203 23:52:45.889" endtime="20201203 23:52:45.890"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:13.217" endtime="20201202 00:21:13.500"></status>
+<status status="PASS" starttime="20201203 23:52:45.618" endtime="20201203 23:52:45.890"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:13.217" endtime="20201202 00:21:13.501" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:45.618" endtime="20201203 23:52:45.891" critical="yes"></status>
 </test>
 <test id="s1-t9" name="SUITE 2 - TEST CASE 1">
 <kw name="SUCCESSULLY CREATE USER">
@@ -377,34 +377,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:13.786" level="INFO">${response} = {'token': 'd15e7f1a-18aa-484a-b55b-e715f3193a3f', 'active': True, 'first_name': 'John', 'last_name': 'SMITH', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:13.503" endtime="20201202 00:21:13.786"></status>
+<msg timestamp="20201203 23:52:46.155" level="INFO">${response} = {'token': '3f2fb180-2542-46e2-b4d9-361d67f52338', 'active': True, 'first_name': 'John', 'last_name': 'SMITH', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:45.894" endtime="20201203 23:52:46.155"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:13.787" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:46.155" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:09Z',
- 'deposit_account': {'account_number': '40014464856100225',
+ 'created_time': '2020-12-04T07:52:45Z',
+ 'deposit_account': {'account_number': '40014464984102978',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '9fc49d44-a370-441a-bf91-c4a2b731d2b9'},
+                     'token': 'd1cd9826-abcb-43c4-968d-9f43d4f5fa9f'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:09Z',
+ 'last_modified_time': '2020-12-04T07:52:45Z',
  'last_name': 'SMITH',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'd15e7f1a-18aa-484a-b55b-e715f3193a3f',
+ 'token': '3f2fb180-2542-46e2-b4d9-361d67f52338',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:13.786" endtime="20201202 00:21:13.787"></status>
+<status status="PASS" starttime="20201203 23:52:46.155" endtime="20201203 23:52:46.156"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:13.503" endtime="20201202 00:21:13.787"></status>
+<status status="PASS" starttime="20201203 23:52:45.893" endtime="20201203 23:52:46.156"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:13.502" endtime="20201202 00:21:13.788" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:45.893" endtime="20201203 23:52:46.157" critical="yes"></status>
 </test>
 <test id="s1-t10" name="SUITE 2 - TEST CASE 2">
 <kw name="SUCCESSULLY CREATE USER">
@@ -422,34 +422,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:14.178" level="INFO">${response} = {'token': 'd6bac178-f49c-49ba-88c0-ab9be3bc85d4', 'active': True, 'first_name': 'John', 'last_name': 'smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:13.790" endtime="20201202 00:21:14.178"></status>
+<msg timestamp="20201203 23:52:46.472" level="INFO">${response} = {'token': 'f89f7d3a-946d-462e-b71e-8bd195a710a9', 'active': True, 'first_name': 'John', 'last_name': 'smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:46.159" endtime="20201203 23:52:46.472"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:14.179" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:46.473" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:10Z',
- 'deposit_account': {'account_number': '40014464944999430',
+ 'created_time': '2020-12-04T07:52:46Z',
+ 'deposit_account': {'account_number': '40014464473966297',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'd43b69ea-96fb-4fb4-9dcb-c74ff27abb10'},
+                     'token': 'fd20b454-4106-4971-a0cc-42da6fd18d7d'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:10Z',
+ 'last_modified_time': '2020-12-04T07:52:46Z',
  'last_name': 'smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'd6bac178-f49c-49ba-88c0-ab9be3bc85d4',
+ 'token': 'f89f7d3a-946d-462e-b71e-8bd195a710a9',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:14.178" endtime="20201202 00:21:14.179"></status>
+<status status="PASS" starttime="20201203 23:52:46.473" endtime="20201203 23:52:46.473"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:13.790" endtime="20201202 00:21:14.179"></status>
+<status status="PASS" starttime="20201203 23:52:46.159" endtime="20201203 23:52:46.473"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:13.789" endtime="20201202 00:21:14.180" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:46.158" endtime="20201203 23:52:46.474" critical="yes"></status>
 </test>
 <test id="s1-t11" name="SUITE 2 - TEST CASE 3">
 <kw name="SUCCESSULLY CREATE USER">
@@ -467,34 +467,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:14.463" level="INFO">${response} = {'token': 'a982ac4b-a346-44dc-8328-1e07cf939eb5', 'active': True, 'first_name': 'John', 'last_name': 'SmItH', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:14.181" endtime="20201202 00:21:14.463"></status>
+<msg timestamp="20201203 23:52:46.744" level="INFO">${response} = {'token': '4549bb9d-7ad6-4a3a-a5f0-9a06decaf7d4', 'active': True, 'first_name': 'John', 'last_name': 'SmItH', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:46.476" endtime="20201203 23:52:46.744"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:14.464" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:46.745" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:10Z',
- 'deposit_account': {'account_number': '40014464035958097',
+ 'created_time': '2020-12-04T07:52:46Z',
+ 'deposit_account': {'account_number': '40014464970232847',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '24f6712c-137e-4f0d-9de6-697a5fb3517a'},
+                     'token': '93bdbef6-6ea6-4053-88e5-f43374925891'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:10Z',
+ 'last_modified_time': '2020-12-04T07:52:46Z',
  'last_name': 'SmItH',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'a982ac4b-a346-44dc-8328-1e07cf939eb5',
+ 'token': '4549bb9d-7ad6-4a3a-a5f0-9a06decaf7d4',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:14.464" endtime="20201202 00:21:14.464"></status>
+<status status="PASS" starttime="20201203 23:52:46.744" endtime="20201203 23:52:46.745"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:14.181" endtime="20201202 00:21:14.464"></status>
+<status status="PASS" starttime="20201203 23:52:46.476" endtime="20201203 23:52:46.745"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:14.180" endtime="20201202 00:21:14.465" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:46.475" endtime="20201203 23:52:46.746" critical="yes"></status>
 </test>
 <test id="s1-t12" name="SUITE 2 - TEST CASE 4">
 <kw name="SUCCESSULLY CREATE USER">
@@ -512,34 +512,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:14.755" level="INFO">${response} = {'token': 'c91272e1-c22c-4569-a65d-afcf4730f1b3', 'active': True, 'first_name': 'John', 'last_name': '$Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02...</msg>
-<status status="PASS" starttime="20201202 00:21:14.467" endtime="20201202 00:21:14.755"></status>
+<msg timestamp="20201203 23:52:47.001" level="INFO">${response} = {'token': '1d4d924b-a1ad-4e65-9afc-0e28c2d2850a', 'active': True, 'first_name': 'John', 'last_name': '$Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04...</msg>
+<status status="PASS" starttime="20201203 23:52:46.748" endtime="20201203 23:52:47.001"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:14.755" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:47.001" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:10Z',
- 'deposit_account': {'account_number': '40014464129007546',
+ 'created_time': '2020-12-04T07:52:46Z',
+ 'deposit_account': {'account_number': '40014464472958402',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'c72c4ea0-9d7e-4a49-a223-50d762931450'},
+                     'token': 'c25e017d-d82e-429b-be67-324d1e9061b6'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:10Z',
+ 'last_modified_time': '2020-12-04T07:52:46Z',
  'last_name': '$Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'c91272e1-c22c-4569-a65d-afcf4730f1b3',
+ 'token': '1d4d924b-a1ad-4e65-9afc-0e28c2d2850a',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:14.755" endtime="20201202 00:21:14.755"></status>
+<status status="PASS" starttime="20201203 23:52:47.001" endtime="20201203 23:52:47.001"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:14.467" endtime="20201202 00:21:14.755"></status>
+<status status="PASS" starttime="20201203 23:52:46.748" endtime="20201203 23:52:47.002"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:14.466" endtime="20201202 00:21:14.756" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:46.747" endtime="20201203 23:52:47.002" critical="yes"></status>
 </test>
 <test id="s1-t13" name="SUITE 2 - TEST CASE 5">
 <kw name="SUCCESSULLY CREATE USER">
@@ -557,34 +557,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:15.042" level="INFO">${response} = {'token': 'b9fd9026-22ca-441b-85b2-5a551f21cf75', 'active': True, 'first_name': 'John', 'last_name': 'Smi_th', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02...</msg>
-<status status="PASS" starttime="20201202 00:21:14.762" endtime="20201202 00:21:15.042"></status>
+<msg timestamp="20201203 23:52:47.268" level="INFO">${response} = {'token': '595fa549-1348-48e5-bab0-9a62fa7862d0', 'active': True, 'first_name': 'John', 'last_name': 'Smi_th', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04...</msg>
+<status status="PASS" starttime="20201203 23:52:47.008" endtime="20201203 23:52:47.268"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:15.042" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:47.269" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:10Z',
- 'deposit_account': {'account_number': '40014464224179695',
+ 'created_time': '2020-12-04T07:52:47Z',
+ 'deposit_account': {'account_number': '40014464982198556',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '6b7c6ec1-d30a-4459-8319-ceb32e2686f6'},
+                     'token': '08a44020-1951-487c-8021-d79ef328eb4f'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:10Z',
+ 'last_modified_time': '2020-12-04T07:52:47Z',
  'last_name': 'Smi_th',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'b9fd9026-22ca-441b-85b2-5a551f21cf75',
+ 'token': '595fa549-1348-48e5-bab0-9a62fa7862d0',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:15.042" endtime="20201202 00:21:15.042"></status>
+<status status="PASS" starttime="20201203 23:52:47.269" endtime="20201203 23:52:47.270"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:14.761" endtime="20201202 00:21:15.043"></status>
+<status status="PASS" starttime="20201203 23:52:47.008" endtime="20201203 23:52:47.270"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:14.761" endtime="20201202 00:21:15.043" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:47.007" endtime="20201203 23:52:47.270" critical="yes"></status>
 </test>
 <test id="s1-t14" name="SUITE 2 - TEST CASE 6">
 <kw name="SUCCESSULLY CREATE USER">
@@ -602,34 +602,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:15.353" level="INFO">${response} = {'token': '009e68d8-9585-4b8d-bc52-e3f1b3c88c37', 'active': True, 'first_name': 'John', 'last_name': 'Smi th', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02...</msg>
-<status status="PASS" starttime="20201202 00:21:15.046" endtime="20201202 00:21:15.353"></status>
+<msg timestamp="20201203 23:52:47.543" level="INFO">${response} = {'token': '8778674d-814b-4483-a788-8a386d68c5e7', 'active': True, 'first_name': 'John', 'last_name': 'Smi th', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04...</msg>
+<status status="PASS" starttime="20201203 23:52:47.272" endtime="20201203 23:52:47.544"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:15.354" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:47.544" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:11Z',
- 'deposit_account': {'account_number': '40014464321506584',
+ 'created_time': '2020-12-04T07:52:47Z',
+ 'deposit_account': {'account_number': '40014464498009552',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'e6bf382b-a8d1-40dd-86b9-d4c0c73297a5'},
+                     'token': '4ec4e69b-177c-4ae4-8cd8-ee1daaff6f48'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:11Z',
+ 'last_modified_time': '2020-12-04T07:52:47Z',
  'last_name': 'Smi th',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '009e68d8-9585-4b8d-bc52-e3f1b3c88c37',
+ 'token': '8778674d-814b-4483-a788-8a386d68c5e7',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:15.353" endtime="20201202 00:21:15.354"></status>
+<status status="PASS" starttime="20201203 23:52:47.544" endtime="20201203 23:52:47.544"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.045" endtime="20201202 00:21:15.354"></status>
+<status status="PASS" starttime="20201203 23:52:47.272" endtime="20201203 23:52:47.544"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.045" endtime="20201202 00:21:15.355" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:47.271" endtime="20201203 23:52:47.545" critical="yes"></status>
 </test>
 <test id="s1-t15" name="SUITE 2 - TEST CASE 7">
 <kw name="SUCCESSULLY CREATE USER">
@@ -647,34 +647,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:15.664" level="INFO">${response} = {'token': 'd87433b6-3262-4d2c-acfe-45e9ae819bf5', 'active': True, 'first_name': 'John', 'last_name': 'S', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T08:2...</msg>
-<status status="PASS" starttime="20201202 00:21:15.357" endtime="20201202 00:21:15.664"></status>
+<msg timestamp="20201203 23:52:47.799" level="INFO">${response} = {'token': 'b405a76f-a936-4944-9d63-6fefc9ed29a0', 'active': True, 'first_name': 'John', 'last_name': 'S', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T07:5...</msg>
+<status status="PASS" starttime="20201203 23:52:47.547" endtime="20201203 23:52:47.799"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:15.665" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:47.799" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:11Z',
- 'deposit_account': {'account_number': '40014464421020494',
+ 'created_time': '2020-12-04T07:52:47Z',
+ 'deposit_account': {'account_number': '40014464020447577',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'e5a574f2-7f73-4187-a21c-dd88f946b1fa'},
+                     'token': '92c9a279-a1ce-4316-bf3d-94696fbea3fb'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:11Z',
+ 'last_modified_time': '2020-12-04T07:52:47Z',
  'last_name': 'S',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'd87433b6-3262-4d2c-acfe-45e9ae819bf5',
+ 'token': 'b405a76f-a936-4944-9d63-6fefc9ed29a0',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:15.664" endtime="20201202 00:21:15.665"></status>
+<status status="PASS" starttime="20201203 23:52:47.799" endtime="20201203 23:52:47.799"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.357" endtime="20201202 00:21:15.665"></status>
+<status status="PASS" starttime="20201203 23:52:47.547" endtime="20201203 23:52:47.799"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.356" endtime="20201202 00:21:15.666" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:47.546" endtime="20201203 23:52:47.800" critical="yes"></status>
 </test>
 <test id="s1-t16" name="SUITE 2 - TEST CASE 8">
 <kw name="SUCCESSULLY CREATE USER">
@@ -692,34 +692,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:15.946" level="INFO">${response} = {'token': 'b3b6e9d5-92ff-4860-b512-5b4c5c599eda', 'active': True, 'first_name': 'John', 'last_name': 's', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T08:2...</msg>
-<status status="PASS" starttime="20201202 00:21:15.668" endtime="20201202 00:21:15.946"></status>
+<msg timestamp="20201203 23:52:48.096" level="INFO">${response} = {'token': '6af3e8bd-4c4c-495e-8253-08e3c691bc29', 'active': True, 'first_name': 'John', 'last_name': 's', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T07:5...</msg>
+<status status="PASS" starttime="20201203 23:52:47.802" endtime="20201203 23:52:48.096"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:15.946" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:48.096" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:11Z',
- 'deposit_account': {'account_number': '40014464522753944',
+ 'created_time': '2020-12-04T07:52:47Z',
+ 'deposit_account': {'account_number': '40014464549569026',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': '3ebe5c1d-f987-4c86-8195-28baf618a407'},
+                     'token': 'c1c48a11-e00c-4d26-834a-8b663442ad4c'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:11Z',
+ 'last_modified_time': '2020-12-04T07:52:47Z',
  'last_name': 's',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'b3b6e9d5-92ff-4860-b512-5b4c5c599eda',
+ 'token': '6af3e8bd-4c4c-495e-8253-08e3c691bc29',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:15.946" endtime="20201202 00:21:15.947"></status>
+<status status="PASS" starttime="20201203 23:52:48.096" endtime="20201203 23:52:48.096"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.667" endtime="20201202 00:21:15.947"></status>
+<status status="PASS" starttime="20201203 23:52:47.802" endtime="20201203 23:52:48.097"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.667" endtime="20201202 00:21:15.947" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:47.801" endtime="20201203 23:52:48.097" critical="yes"></status>
 </test>
 <test id="s1-t17" name="SUITE 3 - TEST CASE 1">
 <kw name="SUCCESSULLY CREATE USER">
@@ -737,34 +737,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:16.229" level="INFO">${response} = {'token': '60477daa-de50-46b9-b328-2e2a54433c3b', 'active': True, 'first_name': 'John', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:15.949" endtime="20201202 00:21:16.229"></status>
+<msg timestamp="20201203 23:52:48.388" level="INFO">${response} = {'token': '627bfddd-d86c-4534-9328-5f32caed68d7', 'active': True, 'first_name': 'John', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:48.099" endtime="20201203 23:52:48.388"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:16.230" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:48.389" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1990-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:12Z',
- 'deposit_account': {'account_number': '40014464626739690',
+ 'created_time': '2020-12-04T07:52:48Z',
+ 'deposit_account': {'account_number': '40014464085430880',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'eced3f2d-e833-4ce3-8181-6817364e0cb1'},
+                     'token': 'd09d8e46-e61f-4d18-8d19-5850e5926c2d'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:12Z',
+ 'last_modified_time': '2020-12-04T07:52:48Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': '60477daa-de50-46b9-b328-2e2a54433c3b',
+ 'token': '627bfddd-d86c-4534-9328-5f32caed68d7',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:16.229" endtime="20201202 00:21:16.230"></status>
+<status status="PASS" starttime="20201203 23:52:48.388" endtime="20201203 23:52:48.389"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.949" endtime="20201202 00:21:16.230"></status>
+<status status="PASS" starttime="20201203 23:52:48.099" endtime="20201203 23:52:48.389"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:15.948" endtime="20201202 00:21:16.231" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:48.098" endtime="20201203 23:52:48.390" critical="yes"></status>
 </test>
 <test id="s1-t18" name="SUITE 3 - TEST CASE 2">
 <kw name="UNSUCCESSULLY CREATE USER">
@@ -782,19 +782,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:16.488" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:16.233" endtime="20201202 00:21:16.488"></status>
+<msg timestamp="20201203 23:52:48.640" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:48.392" endtime="20201203 23:52:48.641"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:16.488" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:16.488" endtime="20201202 00:21:16.488"></status>
+<msg timestamp="20201203 23:52:48.641" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:48.641" endtime="20201203 23:52:48.641"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:16.233" endtime="20201202 00:21:16.488"></status>
+<status status="PASS" starttime="20201203 23:52:48.392" endtime="20201203 23:52:48.641"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:16.232" endtime="20201202 00:21:16.489" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:48.391" endtime="20201203 23:52:48.642" critical="yes"></status>
 </test>
 <test id="s1-t19" name="SUITE 3 - TEST CASE 3">
 <kw name="SUCCESSULLY CREATE USER">
@@ -812,34 +812,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:16.780" level="INFO">${response} = {'token': 'd3a7bd9f-18a2-441f-805e-508bd6fbbdd1', 'active': True, 'first_name': 'John', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:16.495" endtime="20201202 00:21:16.780"></status>
+<msg timestamp="20201203 23:52:48.923" level="INFO">${response} = {'token': '797330d4-b841-4b50-8c20-23c511c5e4b0', 'active': True, 'first_name': 'John', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:48.644" endtime="20201203 23:52:48.923"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:16.780" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:48.924" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '1992-02-29',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:12Z',
- 'deposit_account': {'account_number': '40014464733010746',
+ 'created_time': '2020-12-04T07:52:48Z',
+ 'deposit_account': {'account_number': '40014464628089938',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'ed7a8459-e5bf-4798-86be-ebad72eacde6'},
+                     'token': '9f49bff4-3c4e-47e2-99b8-b8b9c2fa4279'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:12Z',
+ 'last_modified_time': '2020-12-04T07:52:48Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'd3a7bd9f-18a2-441f-805e-508bd6fbbdd1',
+ 'token': '797330d4-b841-4b50-8c20-23c511c5e4b0',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:16.780" endtime="20201202 00:21:16.780"></status>
+<status status="PASS" starttime="20201203 23:52:48.924" endtime="20201203 23:52:48.924"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:16.495" endtime="20201202 00:21:16.780"></status>
+<status status="PASS" starttime="20201203 23:52:48.644" endtime="20201203 23:52:48.924"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:16.494" endtime="20201202 00:21:16.781" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:48.643" endtime="20201203 23:52:48.925" critical="yes"></status>
 </test>
 <test id="s1-t20" name="SUITE 3 - TEST CASE 4">
 <kw name="UNSUCCESSULLY CREATE USER">
@@ -857,19 +857,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:17.035" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:16.784" endtime="20201202 00:21:17.035"></status>
+<msg timestamp="20201203 23:52:49.150" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:48.927" endtime="20201203 23:52:49.150"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:17.035" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:17.035" endtime="20201202 00:21:17.035"></status>
+<msg timestamp="20201203 23:52:49.150" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:49.150" endtime="20201203 23:52:49.150"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:16.783" endtime="20201202 00:21:17.035"></status>
+<status status="PASS" starttime="20201203 23:52:48.927" endtime="20201203 23:52:49.150"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:16.783" endtime="20201202 00:21:17.036" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:48.926" endtime="20201203 23:52:49.151" critical="yes"></status>
 </test>
 <test id="s1-t21" name="SUITE 3 - TEST CASE 5">
 <kw name="UNSUCCESSULLY CREATE USER">
@@ -887,19 +887,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:17.293" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:17.038" endtime="20201202 00:21:17.293"></status>
+<msg timestamp="20201203 23:52:49.389" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:49.153" endtime="20201203 23:52:49.389"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:17.293" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:17.293" endtime="20201202 00:21:17.293"></status>
+<msg timestamp="20201203 23:52:49.390" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:49.389" endtime="20201203 23:52:49.390"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.038" endtime="20201202 00:21:17.293"></status>
+<status status="PASS" starttime="20201203 23:52:49.153" endtime="20201203 23:52:49.390"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.037" endtime="20201202 00:21:17.294" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:49.152" endtime="20201203 23:52:49.390" critical="yes"></status>
 </test>
 <test id="s1-t22" name="SUITE 3 - TEST CASE 6">
 <kw name="SUCCESSULLY CREATE USER">
@@ -917,34 +917,34 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:17.596" level="INFO">${response} = {'token': 'c391a2e0-d686-434c-8cf5-fa9b67e6a264', 'active': True, 'first_name': 'John', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-02T...</msg>
-<status status="PASS" starttime="20201202 00:21:17.296" endtime="20201202 00:21:17.596"></status>
+<msg timestamp="20201203 23:52:49.652" level="INFO">${response} = {'token': 'a3a36cfc-e87f-478f-9ab3-5b8e13e5a062', 'active': True, 'first_name': 'John', 'last_name': 'Smith', 'uses_parent_account': False, 'corporate_card_holder': False, 'created_time': '2020-12-04T...</msg>
+<status status="PASS" starttime="20201203 23:52:49.392" endtime="20201203 23:52:49.652"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:17.597" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
+<msg timestamp="20201203 23:52:49.653" level="INFO">{'account_holder_group_token': 'DEFAULT_AHG',
  'active': True,
  'birth_date': '2010-01-01',
  'corporate_card_holder': False,
- 'created_time': '2020-12-02T08:21:13Z',
- 'deposit_account': {'account_number': '40014464841600339',
+ 'created_time': '2020-12-04T07:52:49Z',
+ 'deposit_account': {'account_number': '40014464177603634',
                      'allow_immediate_credit': False,
                      'routing_number': '293748000',
-                     'token': 'a0d64244-ba80-4d6c-9180-2f8f4bb4bea5'},
+                     'token': '666e2f41-2113-496d-aa61-6fde72b0e510'},
  'first_name': 'John',
- 'last_modified_time': '2020-12-02T08:21:13Z',
+ 'last_modified_time': '2020-12-04T07:52:49Z',
  'last_name': 'Smith',
  'metadata': {},
  'status': 'ACTIVE',
- 'token': 'c391a2e0-d686-434c-8cf5-fa9b67e6a264',
+ 'token': 'a3a36cfc-e87f-478f-9ab3-5b8e13e5a062',
  'uses_parent_account': False}</msg>
-<status status="PASS" starttime="20201202 00:21:17.597" endtime="20201202 00:21:17.597"></status>
+<status status="PASS" starttime="20201203 23:52:49.652" endtime="20201203 23:52:49.653"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.296" endtime="20201202 00:21:17.597"></status>
+<status status="PASS" starttime="20201203 23:52:49.392" endtime="20201203 23:52:49.653"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.295" endtime="20201202 00:21:17.598" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:49.391" endtime="20201203 23:52:49.654" critical="yes"></status>
 </test>
 <test id="s1-t23" name="SUITE 3 - TEST CASE 7">
 <kw name="UNSUCCESSULLY CREATE USER">
@@ -962,19 +962,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:17.860" level="INFO">${response} = {'error_message': 'Birth date cannot be a future date', 'error_code': '400002'}</msg>
-<status status="PASS" starttime="20201202 00:21:17.600" endtime="20201202 00:21:17.860"></status>
+<msg timestamp="20201203 23:52:49.881" level="INFO">${response} = {'error_message': 'Birth date cannot be a future date', 'error_code': '400002'}</msg>
+<status status="PASS" starttime="20201203 23:52:49.656" endtime="20201203 23:52:49.881"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:17.861" level="INFO">{'error_code': '400002', 'error_message': 'Birth date cannot be a future date'}</msg>
-<status status="PASS" starttime="20201202 00:21:17.861" endtime="20201202 00:21:17.861"></status>
+<msg timestamp="20201203 23:52:49.882" level="INFO">{'error_code': '400002', 'error_message': 'Birth date cannot be a future date'}</msg>
+<status status="PASS" starttime="20201203 23:52:49.881" endtime="20201203 23:52:49.882"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.600" endtime="20201202 00:21:17.861"></status>
+<status status="PASS" starttime="20201203 23:52:49.655" endtime="20201203 23:52:49.882"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.599" endtime="20201202 00:21:17.862" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:49.655" endtime="20201203 23:52:49.883" critical="yes"></status>
 </test>
 <test id="s1-t24" name="SUITE 3 - TEST CASE 8">
 <kw name="UNSUCCESSULLY CREATE USER">
@@ -992,22 +992,22 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:18.198" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:17.864" endtime="20201202 00:21:18.198"></status>
+<msg timestamp="20201203 23:52:50.124" level="INFO">${response} = {'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:49.886" endtime="20201203 23:52:50.124"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:18.199" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
-<status status="PASS" starttime="20201202 00:21:18.198" endtime="20201202 00:21:18.199"></status>
+<msg timestamp="20201203 23:52:50.125" level="INFO">{'error_code': '400058', 'error_message': 'Invalid birth date format received'}</msg>
+<status status="PASS" starttime="20201203 23:52:50.124" endtime="20201203 23:52:50.125"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.863" endtime="20201202 00:21:18.199"></status>
+<status status="PASS" starttime="20201203 23:52:49.885" endtime="20201203 23:52:50.125"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:17.863" endtime="20201202 00:21:18.199" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:52:49.885" endtime="20201203 23:52:50.125" critical="yes"></status>
 </test>
 <doc>User Testing for Marqeta</doc>
-<status status="PASS" starttime="20201202 00:21:10.885" endtime="20201202 00:21:18.202"></status>
+<status status="PASS" starttime="20201203 23:52:43.348" endtime="20201203 23:52:50.128"></status>
 </suite>
 <statistics>
 <total>

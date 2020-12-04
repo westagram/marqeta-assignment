@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201202 00:20:53.832" rpa="false">
-<suite id="s1" name="MarqetaTest CardProduct" source="C:\Users\westagram\Desktop\Marqeta\Test\Testing_CardProduct\MarqetaTest_CardProduct.robot">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201203 23:53:01.740" rpa="false">
+<suite id="s1" name="MarqetaTest CardProduct" source="C:\Users\westagram\OneDrive\Desktop\marqeta-assignment\Test\Testing_CardProduct\MarqetaTest_CardProduct.robot">
 <test id="s1-t1" name="SUITE 1 - TEST CASE 1">
 <kw name="SUCCESSULLY CREATE CARD">
 <arguments>
@@ -19,15 +19,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:54.608" level="INFO">${response} = {'token': 'b90f8ae8-b54b-477f-b05d-beef0b2d0847', 'name': 'TEST_CARD', 'active': True, 'start_date': '2019-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:20:54.020" endtime="20201202 00:20:54.608"></status>
+<msg timestamp="20201203 23:53:02.280" level="INFO">${response} = {'token': 'ffc80e59-b2df-4556-8ef7-a45783bff46b', 'name': 'TEST_CARD', 'active': True, 'start_date': '2019-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:01.923" endtime="20201203 23:53:02.280"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:54.611" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:02.283" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -48,7 +48,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -88,17 +88,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:50Z',
+ 'created_time': '2020-12-04T07:53:02Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:50Z',
+ 'last_modified_time': '2020-12-04T07:53:02Z',
  'name': 'TEST_CARD',
  'start_date': '2019-01-01',
- 'token': 'b90f8ae8-b54b-477f-b05d-beef0b2d0847'}</msg>
-<status status="PASS" starttime="20201202 00:20:54.609" endtime="20201202 00:20:54.611"></status>
+ 'token': 'ffc80e59-b2df-4556-8ef7-a45783bff46b'}</msg>
+<status status="PASS" starttime="20201203 23:53:02.280" endtime="20201203 23:53:02.283"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:54.019" endtime="20201202 00:20:54.611"></status>
+<status status="PASS" starttime="20201203 23:53:01.922" endtime="20201203 23:53:02.283"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:54.018" endtime="20201202 00:20:54.612" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:01.921" endtime="20201203 23:53:02.284" critical="yes"></status>
 </test>
 <test id="s1-t2" name="SUITE 1 - TEST CASE 2">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -118,19 +118,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:54.852" level="INFO">${response} = {'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:54.614" endtime="20201202 00:20:54.852"></status>
+<msg timestamp="20201203 23:53:02.518" level="INFO">${response} = {'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:02.286" endtime="20201203 23:53:02.518"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:54.852" level="INFO">{'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:54.852" endtime="20201202 00:20:54.852"></status>
+<msg timestamp="20201203 23:53:02.518" level="INFO">{'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:02.518" endtime="20201203 23:53:02.518"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:54.614" endtime="20201202 00:20:54.853"></status>
+<status status="PASS" starttime="20201203 23:53:02.286" endtime="20201203 23:53:02.518"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:54.613" endtime="20201202 00:20:54.853" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:02.285" endtime="20201203 23:53:02.519" critical="yes"></status>
 </test>
 <test id="s1-t3" name="SUITE 1 - TEST CASE 3">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -150,15 +150,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:55.150" level="INFO">${response} = {'token': 'cc7e08fb-7783-41d0-9a35-9c812a54d862', 'name': 'TEST_CARD', 'active': True, 'start_date': '2020-02-29', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:20:54.856" endtime="20201202 00:20:55.150"></status>
+<msg timestamp="20201203 23:53:02.790" level="INFO">${response} = {'token': 'b2b41094-546a-4264-815a-28c6e515c654', 'name': 'TEST_CARD', 'active': True, 'start_date': '2020-02-29', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:02.521" endtime="20201203 23:53:02.790"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:55.153" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:02.793" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -179,7 +179,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -219,17 +219,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:51Z',
+ 'created_time': '2020-12-04T07:53:02Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:51Z',
+ 'last_modified_time': '2020-12-04T07:53:02Z',
  'name': 'TEST_CARD',
  'start_date': '2020-02-29',
- 'token': 'cc7e08fb-7783-41d0-9a35-9c812a54d862'}</msg>
-<status status="PASS" starttime="20201202 00:20:55.150" endtime="20201202 00:20:55.153"></status>
+ 'token': 'b2b41094-546a-4264-815a-28c6e515c654'}</msg>
+<status status="PASS" starttime="20201203 23:53:02.790" endtime="20201203 23:53:02.793"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:54.856" endtime="20201202 00:20:55.154"></status>
+<status status="PASS" starttime="20201203 23:53:02.521" endtime="20201203 23:53:02.793"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:54.855" endtime="20201202 00:20:55.155" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:02.520" endtime="20201203 23:53:02.794" critical="yes"></status>
 </test>
 <test id="s1-t4" name="SUITE 1 - TEST CASE 4">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -249,15 +249,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:55.428" level="INFO">${response} = {'token': 'bb4429ac-d1ed-494e-99a2-d593dba9e932', 'name': 'TEST_CARD', 'active': True, 'start_date': '2019-03-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:20:55.159" endtime="20201202 00:20:55.428"></status>
+<msg timestamp="20201203 23:53:03.081" level="INFO">${response} = {'token': '394bc056-f1bd-4807-aca9-fede7eda6c6c', 'name': 'TEST_CARD', 'active': True, 'start_date': '2019-03-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:02.796" endtime="20201203 23:53:03.081"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:55.431" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:03.084" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -278,7 +278,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -318,17 +318,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:51Z',
+ 'created_time': '2020-12-04T07:53:02Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:51Z',
+ 'last_modified_time': '2020-12-04T07:53:02Z',
  'name': 'TEST_CARD',
  'start_date': '2019-03-01',
- 'token': 'bb4429ac-d1ed-494e-99a2-d593dba9e932'}</msg>
-<status status="PASS" starttime="20201202 00:20:55.429" endtime="20201202 00:20:55.431"></status>
+ 'token': '394bc056-f1bd-4807-aca9-fede7eda6c6c'}</msg>
+<status status="PASS" starttime="20201203 23:53:03.081" endtime="20201203 23:53:03.084"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:55.158" endtime="20201202 00:20:55.431"></status>
+<status status="PASS" starttime="20201203 23:53:02.796" endtime="20201203 23:53:03.084"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:55.157" endtime="20201202 00:20:55.432" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:02.795" endtime="20201203 23:53:03.085" critical="yes"></status>
 </test>
 <test id="s1-t5" name="SUITE 1 - TEST CASE 5">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -348,19 +348,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:55.681" level="INFO">${response} = {'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:55.434" endtime="20201202 00:20:55.681"></status>
+<msg timestamp="20201203 23:53:03.327" level="INFO">${response} = {'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:03.088" endtime="20201203 23:53:03.327"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:55.682" level="INFO">{'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:55.681" endtime="20201202 00:20:55.682"></status>
+<msg timestamp="20201203 23:53:03.327" level="INFO">{'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:03.327" endtime="20201203 23:53:03.327"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:55.434" endtime="20201202 00:20:55.682"></status>
+<status status="PASS" starttime="20201203 23:53:03.087" endtime="20201203 23:53:03.327"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:55.433" endtime="20201202 00:20:55.683" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:03.086" endtime="20201203 23:53:03.328" critical="yes"></status>
 </test>
 <test id="s1-t6" name="SUITE 1 - TEST CASE 6">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -380,19 +380,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:55.942" level="INFO">${response} = {'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:55.686" endtime="20201202 00:20:55.942"></status>
+<msg timestamp="20201203 23:53:03.565" level="INFO">${response} = {'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:03.330" endtime="20201203 23:53:03.565"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:55.942" level="INFO">{'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:55.942" endtime="20201202 00:20:55.942"></status>
+<msg timestamp="20201203 23:53:03.565" level="INFO">{'error_code': '400044', 'error_message': 'Invalid start date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:03.565" endtime="20201203 23:53:03.565"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:55.685" endtime="20201202 00:20:55.942"></status>
+<status status="PASS" starttime="20201203 23:53:03.330" endtime="20201203 23:53:03.565"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:55.684" endtime="20201202 00:20:55.943" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:03.329" endtime="20201203 23:53:03.566" critical="yes"></status>
 </test>
 <test id="s1-t7" name="SUITE 1 - TEST CASE 7">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -412,12 +412,12 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:56.212" level="FAIL">201 == 201</msg>
-<status status="FAIL" starttime="20201202 00:20:55.946" endtime="20201202 00:20:56.212"></status>
+<msg timestamp="20201203 23:53:03.838" level="FAIL">201 == 201</msg>
+<status status="FAIL" starttime="20201203 23:53:03.568" endtime="20201203 23:53:03.838"></status>
 </kw>
-<status status="FAIL" starttime="20201202 00:20:55.945" endtime="20201202 00:20:56.212"></status>
+<status status="FAIL" starttime="20201203 23:53:03.568" endtime="20201203 23:53:03.838"></status>
 </kw>
-<status status="FAIL" starttime="20201202 00:20:55.945" endtime="20201202 00:20:56.213" critical="yes">201 == 201</status>
+<status status="FAIL" starttime="20201203 23:53:03.567" endtime="20201203 23:53:03.839" critical="yes">201 == 201</status>
 </test>
 <test id="s1-t8" name="SUITE 2 - TEST CASE 1">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -437,15 +437,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:56.511" level="INFO">${response} = {'token': 'b923d9fd-777f-4ace-bde9-16045377a554', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2019-01-01', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:20:56.219" endtime="20201202 00:20:56.512"></status>
+<msg timestamp="20201203 23:53:04.116" level="INFO">${response} = {'token': '5dcca5d1-7c9a-42f2-a0ac-883ba82579e8', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2019-01-01', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:03.846" endtime="20201203 23:53:04.116"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:56.514" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:04.118" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -466,7 +466,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -506,17 +506,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:52Z',
+ 'created_time': '2020-12-04T07:53:03Z',
  'end_date': '2019-01-01',
- 'last_modified_time': '2020-12-02T08:20:52Z',
+ 'last_modified_time': '2020-12-04T07:53:03Z',
  'name': 'TEST_CARD',
  'start_date': '2018-01-01',
- 'token': 'b923d9fd-777f-4ace-bde9-16045377a554'}</msg>
-<status status="PASS" starttime="20201202 00:20:56.512" endtime="20201202 00:20:56.514"></status>
+ 'token': '5dcca5d1-7c9a-42f2-a0ac-883ba82579e8'}</msg>
+<status status="PASS" starttime="20201203 23:53:04.116" endtime="20201203 23:53:04.119"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:56.219" endtime="20201202 00:20:56.514"></status>
+<status status="PASS" starttime="20201203 23:53:03.845" endtime="20201203 23:53:04.119"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:56.218" endtime="20201202 00:20:56.515" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:03.844" endtime="20201203 23:53:04.119" critical="yes"></status>
 </test>
 <test id="s1-t9" name="SUITE 2 - TEST CASE 2">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -536,19 +536,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:56.766" level="INFO">${response} = {'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:56.517" endtime="20201202 00:20:56.766"></status>
+<msg timestamp="20201203 23:53:04.362" level="INFO">${response} = {'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:04.122" endtime="20201203 23:53:04.362"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:56.766" level="INFO">{'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:56.766" endtime="20201202 00:20:56.766"></status>
+<msg timestamp="20201203 23:53:04.363" level="INFO">{'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:04.362" endtime="20201203 23:53:04.363"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:56.517" endtime="20201202 00:20:56.766"></status>
+<status status="PASS" starttime="20201203 23:53:04.122" endtime="20201203 23:53:04.363"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:56.516" endtime="20201202 00:20:56.767" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:04.121" endtime="20201203 23:53:04.363" critical="yes"></status>
 </test>
 <test id="s1-t10" name="SUITE 2 - TEST CASE 3">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -568,15 +568,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:57.035" level="INFO">${response} = {'token': '72043bc2-af52-48db-8c72-b505971387da', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-02-29', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:20:56.769" endtime="20201202 00:20:57.035"></status>
+<msg timestamp="20201203 23:53:04.637" level="INFO">${response} = {'token': '68bfd61e-1309-4e38-8301-e2508c9783b9', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-02-29', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:04.366" endtime="20201203 23:53:04.638"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:57.037" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:04.640" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -597,7 +597,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -637,17 +637,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:52Z',
+ 'created_time': '2020-12-04T07:53:04Z',
  'end_date': '2020-02-29',
- 'last_modified_time': '2020-12-02T08:20:52Z',
+ 'last_modified_time': '2020-12-04T07:53:04Z',
  'name': 'TEST_CARD',
  'start_date': '2018-01-01',
- 'token': '72043bc2-af52-48db-8c72-b505971387da'}</msg>
-<status status="PASS" starttime="20201202 00:20:57.035" endtime="20201202 00:20:57.037"></status>
+ 'token': '68bfd61e-1309-4e38-8301-e2508c9783b9'}</msg>
+<status status="PASS" starttime="20201203 23:53:04.638" endtime="20201203 23:53:04.640"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:56.768" endtime="20201202 00:20:57.038"></status>
+<status status="PASS" starttime="20201203 23:53:04.365" endtime="20201203 23:53:04.640"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:56.768" endtime="20201202 00:20:57.038" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:04.364" endtime="20201203 23:53:04.641" critical="yes"></status>
 </test>
 <test id="s1-t11" name="SUITE 2 - TEST CASE 4">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -667,15 +667,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:57.326" level="INFO">${response} = {'token': '2eee9514-fb46-4994-a77e-73cbfb7e6cd4', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2019-03-01', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:20:57.041" endtime="20201202 00:20:57.326"></status>
+<msg timestamp="20201203 23:53:04.911" level="INFO">${response} = {'token': '22408f06-7cfb-4a9c-895b-3d7b44c971a0', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2019-03-01', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:04.643" endtime="20201203 23:53:04.911"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:57.328" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:04.914" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -696,7 +696,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -736,17 +736,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:53Z',
+ 'created_time': '2020-12-04T07:53:04Z',
  'end_date': '2019-03-01',
- 'last_modified_time': '2020-12-02T08:20:53Z',
+ 'last_modified_time': '2020-12-04T07:53:04Z',
  'name': 'TEST_CARD',
  'start_date': '2018-01-01',
- 'token': '2eee9514-fb46-4994-a77e-73cbfb7e6cd4'}</msg>
-<status status="PASS" starttime="20201202 00:20:57.326" endtime="20201202 00:20:57.328"></status>
+ 'token': '22408f06-7cfb-4a9c-895b-3d7b44c971a0'}</msg>
+<status status="PASS" starttime="20201203 23:53:04.911" endtime="20201203 23:53:04.914"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.040" endtime="20201202 00:20:57.328"></status>
+<status status="PASS" starttime="20201203 23:53:04.643" endtime="20201203 23:53:04.914"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.039" endtime="20201202 00:20:57.329" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:04.642" endtime="20201203 23:53:04.915" critical="yes"></status>
 </test>
 <test id="s1-t12" name="SUITE 2 - TEST CASE 5">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -766,19 +766,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:57.614" level="INFO">${response} = {'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:57.332" endtime="20201202 00:20:57.614"></status>
+<msg timestamp="20201203 23:53:05.139" level="INFO">${response} = {'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:04.917" endtime="20201203 23:53:05.140"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:57.615" level="INFO">{'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:57.614" endtime="20201202 00:20:57.615"></status>
+<msg timestamp="20201203 23:53:05.140" level="INFO">{'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:05.140" endtime="20201203 23:53:05.140"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.331" endtime="20201202 00:20:57.615"></status>
+<status status="PASS" starttime="20201203 23:53:04.917" endtime="20201203 23:53:05.140"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.331" endtime="20201202 00:20:57.616" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:04.916" endtime="20201203 23:53:05.141" critical="yes"></status>
 </test>
 <test id="s1-t13" name="SUITE 2 - TEST CASE 6">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -798,19 +798,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:57.881" level="INFO">${response} = {'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:57.618" endtime="20201202 00:20:57.881"></status>
+<msg timestamp="20201203 23:53:05.381" level="INFO">${response} = {'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:05.144" endtime="20201203 23:53:05.381"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:57.882" level="INFO">{'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
-<status status="PASS" starttime="20201202 00:20:57.881" endtime="20201202 00:20:57.882"></status>
+<msg timestamp="20201203 23:53:05.382" level="INFO">{'error_code': '400045', 'error_message': 'Invalid end date format received'}</msg>
+<status status="PASS" starttime="20201203 23:53:05.381" endtime="20201203 23:53:05.382"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.617" endtime="20201202 00:20:57.882"></status>
+<status status="PASS" starttime="20201203 23:53:05.143" endtime="20201203 23:53:05.382"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.617" endtime="20201202 00:20:57.883" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:05.143" endtime="20201203 23:53:05.383" critical="yes"></status>
 </test>
 <test id="s1-t14" name="SUITE 3 - TEST CASE 1">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -830,15 +830,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:58.163" level="INFO">${response} = {'token': '389648da-b857-463d-9589-5f1849371db4', 'name': 'TESTING CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
-<status status="PASS" starttime="20201202 00:20:57.885" endtime="20201202 00:20:58.163"></status>
+<msg timestamp="20201203 23:53:05.658" level="INFO">${response} = {'token': '5f39bdfe-149f-408a-ae68-d80b099994a9', 'name': 'TESTING CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
+<status status="PASS" starttime="20201203 23:53:05.385" endtime="20201203 23:53:05.658"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:58.165" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:05.660" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -859,7 +859,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -899,17 +899,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:54Z',
+ 'created_time': '2020-12-04T07:53:05Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:54Z',
+ 'last_modified_time': '2020-12-04T07:53:05Z',
  'name': 'TESTING CARD',
  'start_date': '2018-01-01',
- 'token': '389648da-b857-463d-9589-5f1849371db4'}</msg>
-<status status="PASS" starttime="20201202 00:20:58.163" endtime="20201202 00:20:58.165"></status>
+ 'token': '5f39bdfe-149f-408a-ae68-d80b099994a9'}</msg>
+<status status="PASS" starttime="20201203 23:53:05.658" endtime="20201203 23:53:05.660"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.885" endtime="20201202 00:20:58.165"></status>
+<status status="PASS" starttime="20201203 23:53:05.385" endtime="20201203 23:53:05.660"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:57.884" endtime="20201202 00:20:58.166" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:05.384" endtime="20201203 23:53:05.661" critical="yes"></status>
 </test>
 <test id="s1-t15" name="SUITE 3 - TEST CASE 2">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -929,15 +929,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:58.491" level="INFO">${response} = {'token': '273d9c41-0963-473e-be3a-a22021dd6e75', 'name': 'testing card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
-<status status="PASS" starttime="20201202 00:20:58.168" endtime="20201202 00:20:58.492"></status>
+<msg timestamp="20201203 23:53:05.948" level="INFO">${response} = {'token': '98023c5f-ff8e-46ca-850e-75b767f46e57', 'name': 'testing card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
+<status status="PASS" starttime="20201203 23:53:05.663" endtime="20201203 23:53:05.948"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:58.494" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:05.951" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -958,7 +958,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -998,17 +998,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:54Z',
+ 'created_time': '2020-12-04T07:53:05Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:54Z',
+ 'last_modified_time': '2020-12-04T07:53:05Z',
  'name': 'testing card',
  'start_date': '2018-01-01',
- 'token': '273d9c41-0963-473e-be3a-a22021dd6e75'}</msg>
-<status status="PASS" starttime="20201202 00:20:58.492" endtime="20201202 00:20:58.494"></status>
+ 'token': '98023c5f-ff8e-46ca-850e-75b767f46e57'}</msg>
+<status status="PASS" starttime="20201203 23:53:05.948" endtime="20201203 23:53:05.951"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:58.168" endtime="20201202 00:20:58.494"></status>
+<status status="PASS" starttime="20201203 23:53:05.662" endtime="20201203 23:53:05.951"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:58.167" endtime="20201202 00:20:58.495" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:05.662" endtime="20201203 23:53:05.952" critical="yes"></status>
 </test>
 <test id="s1-t16" name="SUITE 3 - TEST CASE 3">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1028,15 +1028,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:58.877" level="INFO">${response} = {'token': '948a945d-8a7b-4605-b1cc-7b7a4a05021a', 'name': 'Testing Card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
-<status status="PASS" starttime="20201202 00:20:58.497" endtime="20201202 00:20:58.877"></status>
+<msg timestamp="20201203 23:53:06.372" level="INFO">${response} = {'token': '503e7a53-883a-48a8-8d0f-336933ddd41e', 'name': 'Testing Card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
+<status status="PASS" starttime="20201203 23:53:05.954" endtime="20201203 23:53:06.373"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:58.880" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:06.375" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1057,7 +1057,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1097,17 +1097,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:54Z',
+ 'created_time': '2020-12-04T07:53:06Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:54Z',
+ 'last_modified_time': '2020-12-04T07:53:06Z',
  'name': 'Testing Card',
  'start_date': '2018-01-01',
- 'token': '948a945d-8a7b-4605-b1cc-7b7a4a05021a'}</msg>
-<status status="PASS" starttime="20201202 00:20:58.877" endtime="20201202 00:20:58.880"></status>
+ 'token': '503e7a53-883a-48a8-8d0f-336933ddd41e'}</msg>
+<status status="PASS" starttime="20201203 23:53:06.373" endtime="20201203 23:53:06.375"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:58.497" endtime="20201202 00:20:58.880"></status>
+<status status="PASS" starttime="20201203 23:53:05.954" endtime="20201203 23:53:06.375"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:58.496" endtime="20201202 00:20:58.881" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:05.953" endtime="20201203 23:53:06.376" critical="yes"></status>
 </test>
 <test id="s1-t17" name="SUITE 3 - TEST CASE 4">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1127,15 +1127,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:59.153" level="INFO">${response} = {'token': 'af324493-78bf-412a-b091-49bc9d969092', 'name': '$Testing $Card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_pres...</msg>
-<status status="PASS" starttime="20201202 00:20:58.883" endtime="20201202 00:20:59.153"></status>
+<msg timestamp="20201203 23:53:06.666" level="INFO">${response} = {'token': 'e09a0d38-1d9d-4f60-b4c9-b34865a47bef', 'name': '$Testing $Card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_pres...</msg>
+<status status="PASS" starttime="20201203 23:53:06.378" endtime="20201203 23:53:06.666"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:59.156" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:06.669" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1156,7 +1156,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1196,17 +1196,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:55Z',
+ 'created_time': '2020-12-04T07:53:06Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:55Z',
+ 'last_modified_time': '2020-12-04T07:53:06Z',
  'name': '$Testing $Card',
  'start_date': '2018-01-01',
- 'token': 'af324493-78bf-412a-b091-49bc9d969092'}</msg>
-<status status="PASS" starttime="20201202 00:20:59.153" endtime="20201202 00:20:59.156"></status>
+ 'token': 'e09a0d38-1d9d-4f60-b4c9-b34865a47bef'}</msg>
+<status status="PASS" starttime="20201203 23:53:06.667" endtime="20201203 23:53:06.669"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:58.883" endtime="20201202 00:20:59.156"></status>
+<status status="PASS" starttime="20201203 23:53:06.378" endtime="20201203 23:53:06.669"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:58.882" endtime="20201202 00:20:59.157" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:06.377" endtime="20201203 23:53:06.670" critical="yes"></status>
 </test>
 <test id="s1-t18" name="SUITE 3 - TEST CASE 5">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1226,15 +1226,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:59.441" level="INFO">${response} = {'token': '3327d128-327b-4c72-b49b-079a9f527e67', 'name': 'Testing_Card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
-<status status="PASS" starttime="20201202 00:20:59.159" endtime="20201202 00:20:59.441"></status>
+<msg timestamp="20201203 23:53:06.933" level="INFO">${response} = {'token': '1fca3cbe-f2f3-4be2-9471-e0672cafbceb', 'name': 'Testing_Card', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presen...</msg>
+<status status="PASS" starttime="20201203 23:53:06.672" endtime="20201203 23:53:06.934"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:59.443" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:06.936" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1255,7 +1255,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1295,17 +1295,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:55Z',
+ 'created_time': '2020-12-04T07:53:06Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:55Z',
+ 'last_modified_time': '2020-12-04T07:53:06Z',
  'name': 'Testing_Card',
  'start_date': '2018-01-01',
- 'token': '3327d128-327b-4c72-b49b-079a9f527e67'}</msg>
-<status status="PASS" starttime="20201202 00:20:59.441" endtime="20201202 00:20:59.443"></status>
+ 'token': '1fca3cbe-f2f3-4be2-9471-e0672cafbceb'}</msg>
+<status status="PASS" starttime="20201203 23:53:06.934" endtime="20201203 23:53:06.936"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.159" endtime="20201202 00:20:59.444"></status>
+<status status="PASS" starttime="20201203 23:53:06.672" endtime="20201203 23:53:06.936"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.158" endtime="20201202 00:20:59.444" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:06.671" endtime="20201203 23:53:06.937" critical="yes"></status>
 </test>
 <test id="s1-t19" name="SUITE 3 - TEST CASE 6">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1325,15 +1325,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:59.712" level="INFO">${response} = {'token': '47188eb8-9ac7-43f7-b94b-bbfb8df5810e', 'name': 'T', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_required...</msg>
-<status status="PASS" starttime="20201202 00:20:59.447" endtime="20201202 00:20:59.712"></status>
+<msg timestamp="20201203 23:53:07.362" level="INFO">${response} = {'token': 'dede8222-9e92-4b10-8578-80caa700bef2', 'name': 'T', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_required...</msg>
+<status status="PASS" starttime="20201203 23:53:06.940" endtime="20201203 23:53:07.363"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:59.714" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:07.365" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1354,7 +1354,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1394,17 +1394,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:55Z',
+ 'created_time': '2020-12-04T07:53:07Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:55Z',
+ 'last_modified_time': '2020-12-04T07:53:07Z',
  'name': 'T',
  'start_date': '2018-01-01',
- 'token': '47188eb8-9ac7-43f7-b94b-bbfb8df5810e'}</msg>
-<status status="PASS" starttime="20201202 00:20:59.712" endtime="20201202 00:20:59.715"></status>
+ 'token': 'dede8222-9e92-4b10-8578-80caa700bef2'}</msg>
+<status status="PASS" starttime="20201203 23:53:07.363" endtime="20201203 23:53:07.365"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.446" endtime="20201202 00:20:59.715"></status>
+<status status="PASS" starttime="20201203 23:53:06.939" endtime="20201203 23:53:07.365"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.446" endtime="20201202 00:20:59.715" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:06.939" endtime="20201203 23:53:07.366" critical="yes"></status>
 </test>
 <test id="s1-t20" name="SUITE 3 - TEST CASE 7">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1424,15 +1424,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:20:59.985" level="INFO">${response} = {'token': 'ab706c88-05a2-48fc-b464-1a6cbb1133dc', 'name': 't', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_required...</msg>
-<status status="PASS" starttime="20201202 00:20:59.718" endtime="20201202 00:20:59.985"></status>
+<msg timestamp="20201203 23:53:07.635" level="INFO">${response} = {'token': '0f494bd5-c3c2-49ce-9d56-3b820bbb50ef', 'name': 't', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_required...</msg>
+<status status="PASS" starttime="20201203 23:53:07.368" endtime="20201203 23:53:07.635"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:20:59.988" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:07.637" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1453,7 +1453,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1493,17 +1493,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:55Z',
+ 'created_time': '2020-12-04T07:53:07Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:55Z',
+ 'last_modified_time': '2020-12-04T07:53:07Z',
  'name': 't',
  'start_date': '2018-01-01',
- 'token': 'ab706c88-05a2-48fc-b464-1a6cbb1133dc'}</msg>
-<status status="PASS" starttime="20201202 00:20:59.986" endtime="20201202 00:20:59.988"></status>
+ 'token': '0f494bd5-c3c2-49ce-9d56-3b820bbb50ef'}</msg>
+<status status="PASS" starttime="20201203 23:53:07.635" endtime="20201203 23:53:07.637"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.717" endtime="20201202 00:20:59.988"></status>
+<status status="PASS" starttime="20201203 23:53:07.368" endtime="20201203 23:53:07.637"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.716" endtime="20201202 00:20:59.989" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:07.367" endtime="20201203 23:53:07.638" critical="yes"></status>
 </test>
 <test id="s1-t21" name="SUITE 3 - TEST CASE 8">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1523,15 +1523,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:00.271" level="INFO">${response} = {'token': '095b9a0c-d65a-4df8-94f4-a3538167d2a5', 'name': 'Testing_Card_Testing_Card_Testing_Card_T', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': ...</msg>
-<status status="PASS" starttime="20201202 00:20:59.992" endtime="20201202 00:21:00.271"></status>
+<msg timestamp="20201203 23:53:08.257" level="INFO">${response} = {'token': '98fcd36d-76d7-4640-84cf-331e96ad76ce', 'name': 'Testing_Card_Testing_Card_Testing_Card_T', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': ...</msg>
+<status status="PASS" starttime="20201203 23:53:07.640" endtime="20201203 23:53:08.258"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:00.273" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:08.260" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1552,7 +1552,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1592,17 +1592,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:56Z',
+ 'created_time': '2020-12-04T07:53:08Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:56Z',
+ 'last_modified_time': '2020-12-04T07:53:08Z',
  'name': 'Testing_Card_Testing_Card_Testing_Card_T',
  'start_date': '2018-01-01',
- 'token': '095b9a0c-d65a-4df8-94f4-a3538167d2a5'}</msg>
-<status status="PASS" starttime="20201202 00:21:00.271" endtime="20201202 00:21:00.274"></status>
+ 'token': '98fcd36d-76d7-4640-84cf-331e96ad76ce'}</msg>
+<status status="PASS" starttime="20201203 23:53:08.258" endtime="20201203 23:53:08.260"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.991" endtime="20201202 00:21:00.274"></status>
+<status status="PASS" starttime="20201203 23:53:07.640" endtime="20201203 23:53:08.260"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:20:59.990" endtime="20201202 00:21:00.274" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:07.639" endtime="20201203 23:53:08.261" critical="yes"></status>
 </test>
 <test id="s1-t22" name="SUITE 3 - TEST CASE 9">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -1622,20 +1622,20 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:00.534" level="INFO">${response} = {'error_code': '400001', 'error_message': 'Invalid input(s): name size must be between 1 and 40'}</msg>
-<status status="PASS" starttime="20201202 00:21:00.277" endtime="20201202 00:21:00.534"></status>
+<msg timestamp="20201203 23:53:08.505" level="INFO">${response} = {'error_code': '400001', 'error_message': 'Invalid input(s): name size must be between 1 and 40'}</msg>
+<status status="PASS" starttime="20201203 23:53:08.263" endtime="20201203 23:53:08.505"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:00.534" level="INFO">{'error_code': '400001',
+<msg timestamp="20201203 23:53:08.505" level="INFO">{'error_code': '400001',
  'error_message': 'Invalid input(s): name size must be between 1 and 40'}</msg>
-<status status="PASS" starttime="20201202 00:21:00.534" endtime="20201202 00:21:00.534"></status>
+<status status="PASS" starttime="20201203 23:53:08.505" endtime="20201203 23:53:08.505"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:00.276" endtime="20201202 00:21:00.534"></status>
+<status status="PASS" starttime="20201203 23:53:08.263" endtime="20201203 23:53:08.505"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:00.276" endtime="20201202 00:21:00.535" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:08.262" endtime="20201203 23:53:08.506" critical="yes"></status>
 </test>
 <test id="s1-t23" name="SUITE 4 - TEST CASE 1">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1655,15 +1655,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:00.798" level="INFO">${response} = {'token': '4047cfae-6874-4bb4-8c43-ad64d051f5fa', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:21:00.537" endtime="20201202 00:21:00.798"></status>
+<msg timestamp="20201203 23:53:08.770" level="INFO">${response} = {'token': '44a8719f-4ddc-4676-a123-3a18a0490554', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:08.508" endtime="20201203 23:53:08.770"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:00.800" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:08.772" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1684,7 +1684,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1724,17 +1724,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:56Z',
+ 'created_time': '2020-12-04T07:53:08Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:56Z',
+ 'last_modified_time': '2020-12-04T07:53:08Z',
  'name': 'TEST_CARD',
  'start_date': '2018-01-01',
- 'token': '4047cfae-6874-4bb4-8c43-ad64d051f5fa'}</msg>
-<status status="PASS" starttime="20201202 00:21:00.798" endtime="20201202 00:21:00.800"></status>
+ 'token': '44a8719f-4ddc-4676-a123-3a18a0490554'}</msg>
+<status status="PASS" starttime="20201203 23:53:08.770" endtime="20201203 23:53:08.773"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:00.537" endtime="20201202 00:21:00.800"></status>
+<status status="PASS" starttime="20201203 23:53:08.508" endtime="20201203 23:53:08.773"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:00.536" endtime="20201202 00:21:00.801" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:08.507" endtime="20201203 23:53:08.773" critical="yes"></status>
 </test>
 <test id="s1-t24" name="SUITE 4 - TEST CASE 2">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -1754,15 +1754,15 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:01.076" level="INFO">${response} = {'token': 'e0ced6e8-76a4-430f-9173-2c1727475a5f', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
-<status status="PASS" starttime="20201202 00:21:00.804" endtime="20201202 00:21:01.076"></status>
+<msg timestamp="20201203 23:53:09.052" level="INFO">${response} = {'token': '33f4b3ff-7d23-4821-a045-246a8f5c873c', 'name': 'TEST_CARD', 'active': True, 'start_date': '2018-01-01', 'end_date': '2020-12-12', 'config': {'poi': {'other': {'allow': True, 'card_presence_...</msg>
+<status status="PASS" starttime="20201203 23:53:08.776" endtime="20201203 23:53:09.052"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:01.078" level="INFO">{'active': True,
- 'config': {'card_life_cycle': {'activate_upon_issue': False,
+<msg timestamp="20201203 23:53:09.054" level="INFO">{'active': True,
+ 'config': {'card_life_cycle': {'activate_upon_issue': True,
                                 'card_service_code': 101,
                                 'expiration_offset': {'unit': 'YEARS',
                                                       'value': 4},
@@ -1783,7 +1783,7 @@
                             'fulfillment_provider': 'PERFECTPLASTIC',
                             'package_id': '0',
                             'pan_length': '16',
-                            'payment_instrument': 'PHYSICAL_MSR',
+                            'payment_instrument': 'VIRTUAL_PAN',
                             'uppercase_name_lines': True},
             'jit_funding': {'paymentcard_funding_source': {'enabled': False,
                                                            'refunds_destination': ''},
@@ -1823,17 +1823,17 @@
                                      'ignore_card_suspended_state': False,
                                      'require_card_not_present_card_security_code': False,
                                      'strong_customer_authentication_limits': {}}},
- 'created_time': '2020-12-02T08:20:57Z',
+ 'created_time': '2020-12-04T07:53:08Z',
  'end_date': '2020-12-12',
- 'last_modified_time': '2020-12-02T08:20:57Z',
+ 'last_modified_time': '2020-12-04T07:53:08Z',
  'name': 'TEST_CARD',
  'start_date': '2018-01-01',
- 'token': 'e0ced6e8-76a4-430f-9173-2c1727475a5f'}</msg>
-<status status="PASS" starttime="20201202 00:21:01.076" endtime="20201202 00:21:01.078"></status>
+ 'token': '33f4b3ff-7d23-4821-a045-246a8f5c873c'}</msg>
+<status status="PASS" starttime="20201203 23:53:09.052" endtime="20201203 23:53:09.054"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:00.803" endtime="20201202 00:21:01.078"></status>
+<status status="PASS" starttime="20201203 23:53:08.775" endtime="20201203 23:53:09.054"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:00.802" endtime="20201202 00:21:01.079" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:08.774" endtime="20201203 23:53:09.055" critical="yes"></status>
 </test>
 <test id="s1-t25" name="SUITE 4 - TEST CASE 3">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -1853,25 +1853,25 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201202 00:21:01.346" level="INFO">${response} = {'error_code': '400037', 'error_message': 'Malformed JSON request received: Can not construct instance of java.lang.Boolean from String value \'Test\': only "true" or "false" recognized at line: 1 col...</msg>
-<status status="PASS" starttime="20201202 00:21:01.081" endtime="20201202 00:21:01.346"></status>
+<msg timestamp="20201203 23:53:09.298" level="INFO">${response} = {'error_code': '400037', 'error_message': 'Malformed JSON request received: Can not construct instance of java.lang.Boolean from String value \'Test\': only "true" or "false" recognized at line: 1 col...</msg>
+<status status="PASS" starttime="20201203 23:53:09.058" endtime="20201203 23:53:09.298"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201202 00:21:01.346" level="INFO">{'error_code': '400037',
+<msg timestamp="20201203 23:53:09.298" level="INFO">{'error_code': '400037',
  'error_message': 'Malformed JSON request received: Can not construct instance '
                   "of java.lang.Boolean from String value 'Test': only "
                   '"true" or "false" recognized at line: 1 column: 21'}</msg>
-<status status="PASS" starttime="20201202 00:21:01.346" endtime="20201202 00:21:01.346"></status>
+<status status="PASS" starttime="20201203 23:53:09.298" endtime="20201203 23:53:09.298"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:01.081" endtime="20201202 00:21:01.347"></status>
+<status status="PASS" starttime="20201203 23:53:09.057" endtime="20201203 23:53:09.299"></status>
 </kw>
-<status status="PASS" starttime="20201202 00:21:01.080" endtime="20201202 00:21:01.347" critical="yes"></status>
+<status status="PASS" starttime="20201203 23:53:09.057" endtime="20201203 23:53:09.299" critical="yes"></status>
 </test>
-<doc>Card Testing for Marqeta</doc>
-<status status="FAIL" starttime="20201202 00:20:53.834" endtime="20201202 00:21:01.350"></status>
+<doc>Card Product Testing for Marqeta</doc>
+<status status="FAIL" starttime="20201203 23:53:01.743" endtime="20201203 23:53:09.302"></status>
 </suite>
 <statistics>
 <total>

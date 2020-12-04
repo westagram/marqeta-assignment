@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Card Testing for Marqeta
+Documentation       Card Product Testing for Marqeta
 
 Library     String
 Library     ../../Lib/marqeta.py
