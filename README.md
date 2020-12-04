@@ -18,11 +18,11 @@ To view the automation code, after going into the test sub-folder, open up the *
 
 ## Run the Automation:
 
-To run the automation, follow the following steps:
-    - Install python version 3 and pip in your machine.
-    - Install RobotFramework by opening the command line and enter *pip install robotframework* (for more detail, visit https://robotframework.org/)
-    - In the command line, navigate through the testing folder and run the execution *robot -A argfile.txt robotfile.robot*
-    - The output of the test will write/overwrite in the */Output* folder. Open up its *log.html* file to check its output.
+To run the automation, follow the following steps:<br />
+    - Install python version 3 and pip in your machine.<br />
+    - Install RobotFramework by opening the command line and enter *pip install robotframework* (for more detail, visit https://robotframework.org/)<br />
+    - In the command line, navigate through the testing folder and run the execution *robot -A argfile.txt robotfile.robot*<br />
+    - The output of the test will write/overwrite in the */Output* folder. Open up its *log.html* file to check its output.<br />
 
 ## Test Library:
 
@@ -30,26 +30,26 @@ The test library (in python) can be found in "Lib/marqeta.py". It includes all n
 
 ## Objects:
 
-There aare 4 objects to support the framework: User, Card, CardProduct and Transaction. Each of the Object has the following APIs:
-    - User (takes 3 parameters: firstName, lastName, birthday):
-        + createUser() - create the User with its parameters
-        + validateSuccessStatus() - validate return status is 201
-        + validateFailStatus() - validate return status is NOT 201
-        + fundTheUser() - fund the User with the given amount as input
-        + returnUserToken() - return the User's token
-    - CardProduct (takes 4 parameters: name, active, startDate, endDate):
-        + createCardProduct() - create the CardProduct with its parameters
-        + validateSuccessStatus() - validate return status is 201
-        + validateFailStatus() - validate return status is NOT 201
-        + returnUserToken() - return the CardProduct's token
-    - Card (takes 2 parameters: userToken, cardProductToken):
-        + createCard() - create the Card with its parameters
-        + validateSuccessStatus() - validate return status is 201
-        + validateFailStatus() - validate return status is NOT 201
-        + returnUserToken() - return the Card's token
-    - Transaction (takes 3 parameters: amount, merchantID, cardToken):
-        + createTransaction() - create the Transaction with its parameters
-        + createTransactionMultipleTimes() - create the same Transaction multiple times with its parameters
-        + validateSuccessStatus() - validate return status is 201
-        + validateFailStatus() - validate return status is NOT 201
-        + validateSuccessStatusForMultipleTransactions() - validate all the multiple transactions have return status 201
+There are 4 objects to support the framework: User, Card, CardProduct and Transaction. Each of the Object has the following APIs:<br />
+    - User (takes 3 parameters: firstName, lastName, birthday):<br />
+        - createUser() - create the User with its parameters<br />
+        - validateSuccessStatus() - validate return status is 201<br />
+        - validateFailStatus() - validate return status is NOT 201<br />
+        - fundTheUser() - fund the User with the given amount as input<br />
+        - returnUserToken() - return the User's token<br />
+    - CardProduct (takes 4 parameters: name, active, startDate, endDate):<br />
+        - createCardProduct() - create the CardProduct with its parameters<br />
+        - validateSuccessStatus() - validate return status is 201<br />
+        - validateFailStatus() - validate return status is NOT 201<br />
+        - returnUserToken() - return the CardProduct's token<br />
+    - Card (takes 2 parameters: userToken, cardProductToken):<br />
+        - createCard() - create the Card with its parameters<br />
+        - validateSuccessStatus() - validate return status is 201<br />
+        - validateFailStatus() - validate return status is NOT 201<br />
+        - returnUserToken() - return the Card's token<br />
+    - Transaction (takes 3 parameters: amount, merchantID, cardToken):<br />
+        - createTransaction() - create the Transaction with its parameters<br />
+        - createTransactionMultipleTimes() - create the same Transaction multiple times with its parameters<br />
+        - validateSuccessStatus() - validate return status is 201<br />
+        - validateFailStatus() - validate return status is NOT 201<br />
+        - validateSuccessStatusForMultipleTransactions() - validate all the multiple transactions have return status 201<br />
