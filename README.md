@@ -1,17 +1,55 @@
 # marqeta-assignment
 
-Hello,
+## Test Documentation:
 
-I ran into an issue during the assignment, particularly when trying to create a card. 
+For test documentation, regarding test cases and its result, please view the excel file "Marqeta Testing Document.xlsx" or use the following google sheets link: https://docs.google.com/spreadsheets/d/1g4hwd1NE1lF8qQTCYXKNsmSUIYUPaV3JxW8BW9s2c88/edit?usp=sharing
 
-As you can see from the image "_Card.png", I'm getting an error saying "Recipient address needs to be defined at least one of Card, Card Holder or Card Product". However, when creating a user (see image "_User.png"), I do have the user's address on file as one of the fields.
+## Test Automation:
 
-This blocker eventually stopped me from creating the test automation for card creation and transactions. However, I've created the test automation for User Creation and Card Product Creation, both can be found in the Test directory.
+The test automation is being written in RobotFramework (for more detail of the framework, visit https://robotframework.org/)
 
-To view the test result, you can go to "Test -> *any of the 2 subdirectories* -> Output" and open up "log.html" in a browser (I might have potentially found a bug in the Card Product Creation, hence a failed test case).
+There are testing automation for 4 functionalities: User Creation, Card Product Creation, Card Creation and Transaction
 
-As for integrating to a CI, I use Jenkins to integrate my robot scripts to the server. However, I cannot complete this optional task without being given a Jenkins server.
+To view the test automation, go to the *Test* folder and its respective sub-folder.
 
-I also attached an excel file as a documentation to all my test cases. If for some reason it is unable to view, you can also view it from this google link: https://docs.google.com/spreadsheets/d/1g4hwd1NE1lF8qQTCYXKNsmSUIYUPaV3JxW8BW9s2c88/edit?usp=sharing
+To view the test result, after going into the test sub-folder, navigate to *Output* and open the *log.html* file (NOTE: it needs to be open in a browser and not only inspecting its html code) 
 
-If the blocker I mention is addressed, I'm more than happy to finish up the assignment. Otherwise, I have submitted what I could to the best of my ability and what the API is allowed. Please let me know if there is any question from my side, I will be more than happy to answer!
+To view the automation code, after going into the test sub-folder, open up the *.robot* file
+
+## Run the Automation:
+
+To run the automation, follow the following steps:
+    - Install python version 3 and pip in your machine.
+    - Install RobotFramework by opening the command line and enter *pip install robotframework* (for more detail, visit https://robotframework.org/)
+    - In the command line, navigate through the testing folder and run the execution *robot -A argfile.txt robotfile.robot*
+    - The output of the test will write/overwrite in the */Output* folder. Open up its *log.html* file to check its output.
+
+## Test Library:
+
+The test library (in python) can be found in "Lib/marqeta.py". It includes all needed functionalities to test user creation, card product creation, card creation and transaction.
+
+## Objects:
+
+There aare 4 objects to support the framework: User, Card, CardProduct and Transaction. Each of the Object has the following APIs:
+    - User (takes 3 parameters: firstName, lastName, birthday):
+        + createUser() - create the User with its parameters
+        + validateSuccessStatus() - validate return status is 201
+        + validateFailStatus() - validate return status is NOT 201
+        + fundTheUser() - fund the User with the given amount as input
+        + returnUserToken() - return the User's token
+    - CardProduct (takes 4 parameters: name, active, startDate, endDate):
+        + createCardProduct() - create the CardProduct with its parameters
+        + validateSuccessStatus() - validate return status is 201
+        + validateFailStatus() - validate return status is NOT 201
+        + returnUserToken() - return the CardProduct's token
+    - Card (takes 2 parameters: userToken, cardProductToken):
+        + createCard() - create the Card with its parameters
+        + validateSuccessStatus() - validate return status is 201
+        + validateFailStatus() - validate return status is NOT 201
+        + returnUserToken() - return the Card's token
+    - Transaction (takes 3 parameters: amount, merchantID, cardToken):
+        + createTransaction() - create the Transaction with its parameters
+        + createTransactionMultipleTimes() - create the same Transaction multiple times with its parameters
+        + validateSuccessStatus() - validate return status is 201
+        + validateFailStatus() - validate return status is NOT 201
+        + validateSuccessStatusForMultipleTransactions() - validate all the multiple transactions have return status 201
