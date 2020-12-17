@@ -22,6 +22,19 @@ SUITE 1 - TEST CASE 4
     SUCCESSULLY CREATE CARD
 
 
+### TEST SUITE 2
+SUITE 2 - TEST CASE 1
+    ${num}  Convert To Integer      2
+    TestSameUserWithMultipleCards   ${num}
+
+SUITE 2 - TEST CASE 2
+    ${num}  Convert To Integer      10
+    TestSameUserWithMultipleCards   ${num}
+
+SUITE 2 - TEST CASE 3
+    ${num}  Convert To Integer      0
+    TestSameUserWithMultipleCards   ${num}
+
 *** Keywords ***
 SUCCESSULLY CREATE CARD
     ${newValidUserToken}            getNewTestingValidUserToken

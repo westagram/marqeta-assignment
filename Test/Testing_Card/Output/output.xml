@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201203 23:53:20.301" rpa="false">
-<suite id="s1" name="MarqetaTest Card" source="C:\Users\westagram\OneDrive\Desktop\marqeta-assignment\Test\Testing_Card\MarqetaTest_Card.robot">
+<robot rpa="false" generated="20201216 16:08:32.130" generator="Robot 3.2.2 (Python 2.7.13 on darwin)">
+<suite source="/Users/administration/Desktop/marqeta-assignment/Test/Testing_Card/MarqetaTest_Card.robot" id="s1" name="MarqetaTest Card">
 <test id="s1-t1" name="SUITE 1 - TEST CASE 1">
 <kw name="Get New Testing Valid User Token" library="marqeta">
 <assign>
 <var>${newValidUserToken}</var>
 </assign>
-<msg timestamp="20201203 23:53:20.872" level="INFO">${newValidUserToken} = a17eeed6-6d9d-4104-b755-e3831f525933</msg>
-<status status="PASS" starttime="20201203 23:53:20.481" endtime="20201203 23:53:20.872"></status>
+<msg timestamp="20201216 16:08:33.177" level="INFO">${newValidUserToken} = ebc1f38b-9214-400a-a003-c883e31aae2b</msg>
+<status status="PASS" endtime="20201216 16:08:33.177" starttime="20201216 16:08:32.769"></status>
 </kw>
 <kw name="UNSUCCESSULLY CREATE CARD">
 <arguments>
@@ -22,27 +22,27 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201203 23:53:21.116" level="INFO">${response} = {'error_message': 'Card product not found', 'error_code': '400016'}</msg>
-<status status="PASS" starttime="20201203 23:53:20.873" endtime="20201203 23:53:21.116"></status>
+<msg timestamp="20201216 16:08:33.493" level="INFO">${response} = {u'error_message': u'Card product not found', u'error_code': u'400016'}</msg>
+<status status="PASS" endtime="20201216 16:08:33.493" starttime="20201216 16:08:33.179"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201203 23:53:21.117" level="INFO">{'error_code': '400016', 'error_message': 'Card product not found'}</msg>
-<status status="PASS" starttime="20201203 23:53:21.116" endtime="20201203 23:53:21.117"></status>
+<msg timestamp="20201216 16:08:33.494" level="INFO">{u'error_code': u'400016', u'error_message': u'Card product not found'}</msg>
+<status status="PASS" endtime="20201216 16:08:33.495" starttime="20201216 16:08:33.494"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:20.872" endtime="20201203 23:53:21.117"></status>
+<status status="PASS" endtime="20201216 16:08:33.495" starttime="20201216 16:08:33.177"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:20.480" endtime="20201203 23:53:21.117" critical="yes"></status>
+<status status="PASS" endtime="20201216 16:08:33.496" critical="yes" starttime="20201216 16:08:32.765"></status>
 </test>
 <test id="s1-t2" name="SUITE 1 - TEST CASE 2">
 <kw name="Get New Testing Valid Card Product Token" library="marqeta">
 <assign>
 <var>${newValidCardProductToken}</var>
 </assign>
-<msg timestamp="20201203 23:53:21.395" level="INFO">${newValidCardProductToken} = 94756adb-9b65-4a04-a747-9b011353d4e6</msg>
-<status status="PASS" starttime="20201203 23:53:21.120" endtime="20201203 23:53:21.395"></status>
+<msg timestamp="20201216 16:08:33.857" level="INFO">${newValidCardProductToken} = 602fc5d0-8e18-4d36-a400-5a886ac9bbda</msg>
+<status status="PASS" endtime="20201216 16:08:33.857" starttime="20201216 16:08:33.498"></status>
 </kw>
 <kw name="UNSUCCESSULLY CREATE CARD">
 <arguments>
@@ -57,19 +57,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201203 23:53:21.639" level="INFO">${response} = {'error_message': 'Cardholder not found', 'error_code': '400010'}</msg>
-<status status="PASS" starttime="20201203 23:53:21.396" endtime="20201203 23:53:21.639"></status>
+<msg timestamp="20201216 16:08:34.189" level="INFO">${response} = {u'error_message': u'Cardholder not found', u'error_code': u'400010'}</msg>
+<status status="PASS" endtime="20201216 16:08:34.189" starttime="20201216 16:08:33.859"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201203 23:53:21.640" level="INFO">{'error_code': '400010', 'error_message': 'Cardholder not found'}</msg>
-<status status="PASS" starttime="20201203 23:53:21.639" endtime="20201203 23:53:21.640"></status>
+<msg timestamp="20201216 16:08:34.191" level="INFO">{u'error_code': u'400010', u'error_message': u'Cardholder not found'}</msg>
+<status status="PASS" endtime="20201216 16:08:34.191" starttime="20201216 16:08:34.190"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:21.395" endtime="20201203 23:53:21.640"></status>
+<status status="PASS" endtime="20201216 16:08:34.192" starttime="20201216 16:08:33.858"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:21.119" endtime="20201203 23:53:21.641" critical="yes"></status>
+<status status="PASS" endtime="20201216 16:08:34.193" critical="yes" starttime="20201216 16:08:33.497"></status>
 </test>
 <test id="s1-t3" name="SUITE 1 - TEST CASE 3">
 <kw name="UNSUCCESSULLY CREATE CARD">
@@ -85,19 +85,19 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201203 23:53:21.889" level="INFO">${response} = {'error_message': 'Card product not found', 'error_code': '400016'}</msg>
-<status status="PASS" starttime="20201203 23:53:21.643" endtime="20201203 23:53:21.889"></status>
+<msg timestamp="20201216 16:08:34.582" level="INFO">${response} = {u'error_message': u'Card product not found', u'error_code': u'400016'}</msg>
+<status status="PASS" endtime="20201216 16:08:34.583" starttime="20201216 16:08:34.200"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201203 23:53:21.889" level="INFO">{'error_code': '400016', 'error_message': 'Card product not found'}</msg>
-<status status="PASS" starttime="20201203 23:53:21.889" endtime="20201203 23:53:21.889"></status>
+<msg timestamp="20201216 16:08:34.584" level="INFO">{u'error_code': u'400016', u'error_message': u'Card product not found'}</msg>
+<status status="PASS" endtime="20201216 16:08:34.584" starttime="20201216 16:08:34.583"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:21.643" endtime="20201203 23:53:21.889"></status>
+<status status="PASS" endtime="20201216 16:08:34.584" starttime="20201216 16:08:34.197"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:21.642" endtime="20201203 23:53:21.890" critical="yes"></status>
+<status status="PASS" endtime="20201216 16:08:34.585" critical="yes" starttime="20201216 16:08:34.195"></status>
 </test>
 <test id="s1-t4" name="SUITE 1 - TEST CASE 4">
 <kw name="SUCCESSULLY CREATE CARD">
@@ -105,15 +105,15 @@
 <assign>
 <var>${newValidUserToken}</var>
 </assign>
-<msg timestamp="20201203 23:53:22.181" level="INFO">${newValidUserToken} = 3ba06778-ed90-4313-8b9c-2ac86ccd90b1</msg>
-<status status="PASS" starttime="20201203 23:53:21.892" endtime="20201203 23:53:22.181"></status>
+<msg timestamp="20201216 16:08:34.948" level="INFO">${newValidUserToken} = 532fbd66-b48e-4d2b-baf4-b95b1d4de7be</msg>
+<status status="PASS" endtime="20201216 16:08:34.948" starttime="20201216 16:08:34.589"></status>
 </kw>
 <kw name="Get New Testing Valid Card Product Token" library="marqeta">
 <assign>
 <var>${newValidCardProductToken}</var>
 </assign>
-<msg timestamp="20201203 23:53:22.596" level="INFO">${newValidCardProductToken} = d370128a-0e22-4fcb-b487-ac54296b0c17</msg>
-<status status="PASS" starttime="20201203 23:53:22.181" endtime="20201203 23:53:22.596"></status>
+<msg timestamp="20201216 16:08:35.274" level="INFO">${newValidCardProductToken} = e6c4191b-336d-4124-8f5f-f2ddb623dd2e</msg>
+<status status="PASS" endtime="20201216 16:08:35.274" starttime="20201216 16:08:34.948"></status>
 </kw>
 <kw name="Test Success Card" library="marqeta">
 <arguments>
@@ -123,48 +123,315 @@
 <assign>
 <var>${response}</var>
 </assign>
-<msg timestamp="20201203 23:53:23.336" level="INFO">${response} = {'created_time': '2020-12-04T07:53:23Z', 'last_modified_time': '2020-12-04T07:53:23Z', 'token': '629d4553-2bae-4ed4-b229-302aa1a6d95c', 'user_token': '3ba06778-ed90-4313-8b9c-2ac86ccd90b1', 'card_prod...</msg>
-<status status="PASS" starttime="20201203 23:53:22.597" endtime="20201203 23:53:23.336"></status>
+<msg timestamp="20201216 16:08:36.058" level="INFO">${response} = {u'instrument_type': u'VIRTUAL_PAN', u'state_reason': u'New card activated', u'pin_is_set': False, u'user_token': u'532fbd66-b48e-4d2b-baf4-b95b1d4de7be', u'barcode': u'13493515396118835868', u'state'...</msg>
+<status status="PASS" endtime="20201216 16:08:36.058" starttime="20201216 16:08:35.274"></status>
 </kw>
 <kw name="Pretty Print Response" library="marqeta">
 <arguments>
 <arg>${response}</arg>
 </arguments>
-<msg timestamp="20201203 23:53:23.337" level="INFO">{'barcode': '15752949248390638313',
- 'card_product_token': 'd370128a-0e22-4fcb-b487-ac54296b0c17',
- 'created_time': '2020-12-04T07:53:23Z',
- 'expedite': False,
- 'expiration': '1224',
- 'expiration_time': '2024-12-31T23:59:59Z',
- 'fulfillment_status': 'ISSUED',
- 'instrument_type': 'VIRTUAL_PAN',
- 'last_four': '6279',
- 'last_modified_time': '2020-12-04T07:53:23Z',
- 'metadata': {},
- 'pan': '111111______6279',
- 'pin_is_set': False,
- 'state': 'ACTIVE',
- 'state_reason': 'New card activated',
- 'token': '629d4553-2bae-4ed4-b229-302aa1a6d95c',
- 'user_token': '3ba06778-ed90-4313-8b9c-2ac86ccd90b1'}</msg>
-<status status="PASS" starttime="20201203 23:53:23.336" endtime="20201203 23:53:23.337"></status>
+<msg timestamp="20201216 16:08:36.059" level="INFO">{u'barcode': u'13493515396118835868',
+ u'card_product_token': u'e6c4191b-336d-4124-8f5f-f2ddb623dd2e',
+ u'created_time': u'2020-12-17T00:08:34Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'8329',
+ u'last_modified_time': u'2020-12-17T00:08:34Z',
+ u'metadata': {},
+ u'pan': u'111111______8329',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'cfb4a832-2f0a-4541-9aab-f817ca491918',
+ u'user_token': u'532fbd66-b48e-4d2b-baf4-b95b1d4de7be'}</msg>
+<status status="PASS" endtime="20201216 16:08:36.059" starttime="20201216 16:08:36.058"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:21.892" endtime="20201203 23:53:23.337"></status>
+<status status="PASS" endtime="20201216 16:08:36.060" starttime="20201216 16:08:34.588"></status>
 </kw>
-<status status="PASS" starttime="20201203 23:53:21.891" endtime="20201203 23:53:23.337" critical="yes"></status>
+<status status="PASS" endtime="20201216 16:08:36.060" critical="yes" starttime="20201216 16:08:34.586"></status>
+</test>
+<test id="s1-t5" name="SUITE 2 - TEST CASE 1">
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${num}</var>
+</assign>
+<msg timestamp="20201216 16:08:36.068" level="INFO">${num} = 2</msg>
+<status status="PASS" endtime="20201216 16:08:36.068" starttime="20201216 16:08:36.065"></status>
+</kw>
+<kw name="Test Same User With Multiple Cards" library="marqeta">
+<arguments>
+<arg>${num}</arg>
+</arguments>
+<msg timestamp="20201216 16:08:38.096" level="INFO">{u'barcode': u'31655775754761657858',
+ u'card_product_token': u'e67a26cf-b355-43f2-80cd-fd8e9f8d2c04',
+ u'created_time': u'2020-12-17T00:08:36Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'9497',
+ u'last_modified_time': u'2020-12-17T00:08:36Z',
+ u'metadata': {},
+ u'pan': u'111111______9497',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'53dab4c4-ecaf-4ef5-a5f8-270673a9b6c9',
+ u'user_token': u'd673dcc1-4c5f-453f-a291-03b224aaee8a'}
+{u'barcode': u'60237969567982386085',
+ u'card_product_token': u'e67a26cf-b355-43f2-80cd-fd8e9f8d2c04',
+ u'created_time': u'2020-12-17T00:08:36Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'3333',
+ u'last_modified_time': u'2020-12-17T00:08:36Z',
+ u'metadata': {},
+ u'pan': u'111111______3333',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'42717ded-c4af-4d82-9932-88ca59936647',
+ u'user_token': u'd673dcc1-4c5f-453f-a291-03b224aaee8a'}
+('Card Set: ', 2)</msg>
+<status status="PASS" endtime="20201216 16:08:38.096" starttime="20201216 16:08:36.068"></status>
+</kw>
+<status status="PASS" endtime="20201216 16:08:38.097" critical="yes" starttime="20201216 16:08:36.061"></status>
+</test>
+<test id="s1-t6" name="SUITE 2 - TEST CASE 2">
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${num}</var>
+</assign>
+<msg timestamp="20201216 16:08:38.111" level="INFO">${num} = 10</msg>
+<status status="PASS" endtime="20201216 16:08:38.111" starttime="20201216 16:08:38.109"></status>
+</kw>
+<kw name="Test Same User With Multiple Cards" library="marqeta">
+<arguments>
+<arg>${num}</arg>
+</arguments>
+<msg timestamp="20201216 16:08:45.299" level="INFO">{u'barcode': u'22287047221611989047',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:38Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'0341',
+ u'last_modified_time': u'2020-12-17T00:08:38Z',
+ u'metadata': {},
+ u'pan': u'111111______0341',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'68067a08-1f5f-44df-a6ac-1f67ac83f8f8',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'25624306804569395838',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:38Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'9374',
+ u'last_modified_time': u'2020-12-17T00:08:38Z',
+ u'metadata': {},
+ u'pan': u'111111______9374',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'a56f296e-ae4c-459a-a59c-e4dd809806d4',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'20509925961644480424',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:39Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'0144',
+ u'last_modified_time': u'2020-12-17T00:08:39Z',
+ u'metadata': {},
+ u'pan': u'111111______0144',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'06e76102-c18d-4f93-aff0-a089da4171dd',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'14176656286990250540',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:40Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'3249',
+ u'last_modified_time': u'2020-12-17T00:08:40Z',
+ u'metadata': {},
+ u'pan': u'111111______3249',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'60740bc2-447d-4730-913f-1af4e453a564',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'33867067083787625071',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:40Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'7617',
+ u'last_modified_time': u'2020-12-17T00:08:40Z',
+ u'metadata': {},
+ u'pan': u'111111______7617',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'a89de29c-8b99-4f30-b16a-72b59c65c703',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'12382732979405750663',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:41Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'4325',
+ u'last_modified_time': u'2020-12-17T00:08:41Z',
+ u'metadata': {},
+ u'pan': u'111111______4325',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'3a749234-7e22-4bfc-b4b4-40624bc15019',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'20484958974825901299',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:41Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'4054',
+ u'last_modified_time': u'2020-12-17T00:08:42Z',
+ u'metadata': {},
+ u'pan': u'111111______4054',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'71d6f4ef-a1ab-4b0b-995a-520c863e123e',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'18281292073841269441',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:42Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'7722',
+ u'last_modified_time': u'2020-12-17T00:08:42Z',
+ u'metadata': {},
+ u'pan': u'111111______7722',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'cbae48c5-5cf6-459a-80a4-38eceee10f48',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'22515396545692718020',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:43Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'7122',
+ u'last_modified_time': u'2020-12-17T00:08:43Z',
+ u'metadata': {},
+ u'pan': u'111111______7122',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'3309bf50-4825-40b5-ad70-613331f78e5c',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+{u'barcode': u'46849776421379706078',
+ u'card_product_token': u'4991b145-a919-443c-b3b2-4ddd4b104dae',
+ u'created_time': u'2020-12-17T00:08:43Z',
+ u'expedite': False,
+ u'expiration': u'1224',
+ u'expiration_time': u'2024-12-31T23:59:59Z',
+ u'fulfillment_status': u'ISSUED',
+ u'instrument_type': u'VIRTUAL_PAN',
+ u'last_four': u'2393',
+ u'last_modified_time': u'2020-12-17T00:08:43Z',
+ u'metadata': {},
+ u'pan': u'111111______2393',
+ u'pin_is_set': False,
+ u'state': u'ACTIVE',
+ u'state_reason': u'New card activated',
+ u'token': u'a0a2844a-7e71-44d6-b6d1-f55ec29fc40c',
+ u'user_token': u'e2d5fb39-1bca-427c-a9ad-d8fabbc37b5b'}
+('Card Set: ', 10)</msg>
+<status status="PASS" endtime="20201216 16:08:45.299" starttime="20201216 16:08:38.111"></status>
+</kw>
+<status status="PASS" endtime="20201216 16:08:45.300" critical="yes" starttime="20201216 16:08:38.101"></status>
+</test>
+<test id="s1-t7" name="SUITE 2 - TEST CASE 3">
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${num}</var>
+</assign>
+<msg timestamp="20201216 16:08:45.306" level="INFO">${num} = 0</msg>
+<status status="PASS" endtime="20201216 16:08:45.306" starttime="20201216 16:08:45.304"></status>
+</kw>
+<kw name="Test Same User With Multiple Cards" library="marqeta">
+<arguments>
+<arg>${num}</arg>
+</arguments>
+<msg timestamp="20201216 16:08:46.152" level="INFO">('Card Set: ', 0)</msg>
+<status status="PASS" endtime="20201216 16:08:46.152" starttime="20201216 16:08:45.307"></status>
+</kw>
+<status status="PASS" endtime="20201216 16:08:46.153" critical="yes" starttime="20201216 16:08:45.301"></status>
 </test>
 <doc>Card Testing for Marqeta</doc>
-<status status="PASS" starttime="20201203 23:53:20.304" endtime="20201203 23:53:23.339"></status>
+<status status="PASS" endtime="20201216 16:08:46.157" starttime="20201216 16:08:32.134"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0">Critical Tests</stat>
-<stat pass="4" fail="0">All Tests</stat>
+<stat fail="0" pass="7">Critical Tests</stat>
+<stat fail="0" pass="7">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" id="s1" name="MarqetaTest Card">MarqetaTest Card</stat>
+<stat fail="0" id="s1" name="MarqetaTest Card" pass="7">MarqetaTest Card</stat>
 </suite>
 </statistics>
 <errors>

@@ -3,6 +3,7 @@ from CardProduct import CardProduct
 from Card import Card
 from Transaction import Transaction
 from pprint import pprint
+from robot.utils.asserts import assert_equal
 
 import requests
 import json
@@ -69,6 +70,27 @@ def testFailedCard(userToken, cardProductToken):
     newCard.validateFailStatus(statusCode)
     return response
 
+def testSameUserWithMultipleCards(nCard):
+    newUser = User("Test", "User", "1990-01-01")
+    newUser.createUser(USERNAME, PASSWORD)
+    newCardProduct = CardProduct("Test_Card_Product", True, "2019-01-01", "2030-01-01")
+    newCardProduct.createCardProduct(USERNAME, PASSWORD)
+    cardSet = set()
+    userTokenSet = set()
+    for num in range(nCard):
+        newCard = Card(newUser.returnUserToken(), newCardProduct.returnCardProductToken())
+        (statusCode, response) = newCard.createCard(USERNAME, PASSWORD)
+        userTokenSet.add(response["user_token"])
+        cardSet.add(response["token"])
+        prettyPrintResponse(response)
+        assert_equal(response["state"], "ACTIVE")
+    assert_equal(len(cardSet), nCard)
+    if nCard == 0:
+        assert_equal(len(userTokenSet), 0)
+    else:
+        assert_equal(len(userTokenSet), 1)
+    
+
 #####################################
 ##### Transaction Testing Utils
 #####################################
@@ -114,9 +136,24 @@ def testSuccessMultipleTransaction(transactionAmount, merchantID, cardToken, nTr
     responseList = newTransaction.createTransactionMultipleTimes(USERNAME, PASSWORD, nTransaction)
     newTransaction.validateSuccessStatusForMultipleTransactions(responseList)
 
+
+def verifyNewBalance(fund, transactionAmount):
+    cardToken = transactionUtil(fund)
+    newTransaction = createNewTransaction(transactionAmount, "1", cardToken)
+    (statusCode, response) = newTransaction.createTransaction(USERNAME, PASSWORD)
+    newBalance = response["transaction"]["gpa"]["available_balance"]
+    assert_equal(int(newBalance), (fund - transactionAmount))
+    
+    
+    
+    
+
+
 #####################################
 ##### Pretty Print Response
 #####################################
 
 def prettyPrintResponse(response):
     pprint(response)
+
+
